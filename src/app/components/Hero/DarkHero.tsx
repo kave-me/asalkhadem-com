@@ -3,10 +3,10 @@ import { DarkNavbar } from "components/Navbar/DarkNavbar";
 export const DarkHero = () => {
   const subHead = `دکتر عسل خادم دانش پژوه دکتری تخصصی روانشناسی سلامت روانشناس و روان درمانگر روان درمانی فردی: - اضطراب و افسردگی - احساس پوچی و بی هدفی (خلاء وجودی) رواندرمانی بین فردی و رابطه گروه درمانی اگزیستانسیال`;
   return (
-    <div className="bg-gray-800 overflow-hidden">
-      <DarkNavbar />
+    <>
+      {/*<div className="bg-gray-800 overflow-hidden">*/}
 
-      <div className="flex flex-col lg:flex-row space-y-16 lg:space-y-0 text-center lg:text-right container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
+      <div className="flex flex-col lg:flex-row space-y-16 lg:space-y-0 text-center lg:text-right container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32 bg-gray-800 overflow-hidden">
         <div className="lg:w-1/2 lg:flex lg:items-center">
           <div>
             <h2 className="text-3xl md:text-5xl font-extrabold mb-6 text-white">
@@ -60,6 +60,7 @@ export const DarkHero = () => {
           </div>
         </div>
       </div>
-    </div>
+      {/*</div>*/}
+    </>
   );
 };

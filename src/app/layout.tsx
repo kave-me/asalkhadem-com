@@ -1,4 +1,7 @@
 import "./globals.css";
+import { Footer } from "components/Footer";
+import { Navbar } from "components/Navbar";
+import { DarkNavbar } from "components/Navbar/DarkNavbar";
 import { Inter } from "next/font/google";
 import localFonts from "next/font/local";
 
@@ -52,7 +55,9 @@ export default function RootLayout({
       <body
         className={`${iranSans.className} flex flex-col mx-auto w-full min-h-screen bg-gray-900`}
       >
+        <DarkNavbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
