@@ -2,11 +2,11 @@ function HeartIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      fill="none"
+      fill="rgba(255, 0, 0, 0.5)"
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-6 h-6 text-red-500"
+      className="w-6 h-6 text-red-400 animate-pulse hover:text-red-600 transition-colors duration-500 hover:scale-110 active:scale-95 saturate-150"
     >
       <path
         strokeLinecap="round"
