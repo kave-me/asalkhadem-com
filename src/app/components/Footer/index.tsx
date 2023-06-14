@@ -1,7 +1,7 @@
 export const Footer = () => (
   <footer id="page-footer" className="bg-white">
     <div className="flex flex-col md:flex-row-reverse md:justify-between space-y-6 md:space-y-0 text-center md:text-left text-sm lg:text-base container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
-      <nav className="space-x-4">
+      <nav className="flex gap-4">
         <a href="#" className="text-gray-400 hover:text-indigo-600">
           <svg
             fill="currentColor"
