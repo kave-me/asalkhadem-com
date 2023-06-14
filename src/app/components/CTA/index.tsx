@@ -25,11 +25,12 @@ export function CTA() {
                   href="#"
                   className="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-6 py-4 leading-6 rounded border-indigo-700 bg-indigo-700 text-white hover:text-white hover:bg-indigo-800 hover:border-indigo-800 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-700 active:border-indigo-700 mx-4"
                 >
+                  <span className={"mx-2"}>رزرو جلسه</span>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="opacity-50 hi-solid hi-arrow-right inline-block w-5 h-5 mx-2"
+                    className="opacity-50 hi-solid hi-arrow-left rotate-180 inline-block w-5 h-5"
                   >
                     <path
                       fillRule="evenodd"
@@ -37,17 +38,17 @@ export function CTA() {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                  <span>رزرو جلسه</span>
                 </a>
                 <a
                   href="#"
                   className="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-6 py-4 leading-6 rounded border-gray-200 bg-gray-200 text-gray-700 hover:text-gray-700 hover:bg-gray-300 hover:border-gray-300 focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:bg-gray-200 active:border-gray-200"
                 >
+                  <span className={" mx-2"}>اطلاعات بیشتر</span>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="opacity-50 hi-solid hi-information-circle inline-block w-5 h-5 mx-2"
+                    className="opacity-50 hi-solid hi-information-circle inline-block w-5 h-5"
                   >
                     <path
                       fillRule="evenodd"
@@ -55,7 +56,6 @@ export function CTA() {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                  <span>اطلاعات بیشتر</span>
                 </a>
               </div>
             </div>
