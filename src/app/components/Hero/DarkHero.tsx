@@ -9,9 +9,6 @@ export const DarkHero = () => {
       <div className="flex flex-col lg:flex-row space-y-16 lg:space-y-0 text-center lg:text-right container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
         <div className="lg:w-1/2 lg:flex lg:items-center">
           <div>
-            {/*<div className="font-semibold inline-flex px-2 py-1 leading-4 mb-2 text-sm rounded-full text-gray-700 bg-gray-200">*/}
-            {/*  v2.0 Latest Version*/}
-            {/*</div>*/}
             <h2 className="text-3xl md:text-5xl font-extrabold mb-6 text-white">
               دکتر <span className="text-indigo-300">عسل خادم</span>
             </h2>
@@ -50,14 +47,15 @@ export const DarkHero = () => {
         </div>
         <div className="lg:w-1/2 lg:ml-16 lg:flex lg:justify-center lg:items-center">
           <div className="lg:w-96 mx-5 relative">
-            <div className="absolute pattern-dots-xl text-indigo-800 top-0 left-0 w-32 h-48 md:h-96 transform -translate-y-12 -translate-x-16 -rotate-3"></div>
+            <div className="absolute pattern-dots-xl top-0 left-0 w-32 h-48 md:h-96 transform -translate-y-12 -translate-x-16 -rotate-3 scale-[800%] opacity-20 saturate-150 duration-500 filter blur-xl text-green-500"></div>
+            <div className="absolute pattern-dots-xl text-indigo-800 top-0 left-0 w-32 h-48 md:h-96 transform -translate-y-12 -translate-x-16 -rotate-3 "></div>
             <div className="absolute pattern-dots-xl text-indigo-800 bottom-0 right-0 w-32 h-48 md:h-96 transform translate-y-12 translate-x-16 rotate-3"></div>
-            <div className="absolute inset-0 rounded-xl bg-gray-600 bg-opacity-20 -m-4 transform rotate-2"></div>
-            <div className="absolute inset-0 rounded-xl bg-gray-600 bg-opacity-25 -m-4 transform -rotate-2"></div>
+            <div className="absolute inset-0 rounded-xl bg-gray-600 bg-opacity-20 -m-4 transform rotate-2 hover:rotate-3 transition-all duration-1000 hover:scale-110"></div>
+            <div className="absolute inset-0 rounded-xl bg-gray-600 bg-opacity-25 -m-4 transform -rotate-2 hover:-rotate-3 transition-all duration-1000 hover:scale-105"></div>
             <img
               src="1.png"
               alt="Hero Image"
-              className="relative rounded-lg mx-auto shadow-lg transition-all duration-300 cursor-pointer filter grayscale-[40%] hover:grayscale-[25%] hover:scale-[102%]"
+              className="relative rounded-lg mx-auto shadow-lg transition-all duration-300 cursor-pointer filter grayscale-[40%] hover:grayscale-[25%] hover:scale-[102%] active:scale-95"
             />
           </div>
         </div>
