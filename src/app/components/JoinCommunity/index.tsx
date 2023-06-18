@@ -1,3 +1,5 @@
+import React, { useCallback } from "react";
+
 export function JoinCommunity() {
   return (
     <div className="bg-white">

@@ -1,7 +1,6 @@
 import { CTA } from "components/CTA";
 import { FAQ } from "components/FAQ";
 import { Features } from "components/Features";
-import { Footer } from "components/Footer";
 import { DarkHero } from "components/Hero/DarkHero";
 import { JoinCommunity } from "components/JoinCommunity";
 import { Testimonial } from "components/Testimonial";
@@ -15,7 +14,6 @@ export default function Home() {
       <FAQ />
       <CTA />
       <JoinCommunity />
-      {/*<Footer />*/}
     </main>
   );
 }

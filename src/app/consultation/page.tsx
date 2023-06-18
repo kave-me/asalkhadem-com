@@ -1,56 +1,54 @@
 import Image from "next/image";
 
-export default function About() {
+export default function Home() {
   return (
     <main id="page-content" className="flex flex-auto flex-col max-w-full">
       <div className="bg-gray-100">
         <div className="space-y-16 container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
           <div>
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+              stroke="currentColor"
+              fill="none"
               viewBox="0 0 24 24"
-              fill="currentColor"
-              className="w-24 h-24 text-yellow-400 mx-auto"
+              xmlns="http://www.w3.org/2000/svg"
+              className="text-indigo-600 mb-5 hi-outline hi-code inline-block w-24 h-24"
             >
               <path
-                fillRule="evenodd"
-                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
-                clipRule="evenodd"
-              />
+                strokeLinecap="round"
+                strokeWidth="2"
+                strokeLinejoin="round"
+                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+              ></path>
             </svg>
-
-            <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
-              ایپسوم <span className="font-light">لورم لورم</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
+              We are <span className="font-light">TechCode</span>
             </h2>
             <h3 className="text-lg md:text-xl md:leading-relaxed font-medium lg:w-1/2 text-gray-600">
-              دکتر عسل خادم دانش پژوه دکتری تخصصی روانشناسی سلامت روانشناس و
-              روان درمانگر روان درمانی فردی: - اضطراب و افسردگی - احساس پوچی و
-              بی هدفی (خلاء وجودی) رواندرمانی بین فردی و رابطه گروه درمانی
-              اگزیستانسیال
+              A passionate team who are here to help you code and build your
+              business using powerful tools.
             </h3>
           </div>
 
-          <div className="flex gap-2">
+          <div className="flex space-x-2">
             <div>
               <img
-                src="f1.png"
+                src="https://source.unsplash.com/gMsnXqILjp4/1280x800"
                 alt="Featured Image"
-                className="rounded-lg aspect-[3/4] object-cover origin-center max-w-md"
+                className="rounded-lg"
               />
             </div>
             <div>
               <img
-                src="f2.png"
+                src="https://source.unsplash.com/c3tNiAb098I/600x800"
                 alt="Featured Image"
-                className="rounded-lg aspect-[3/4] object-cover origin-center max-w-md"
+                className="rounded-lg"
               />
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
             <div>
-              <h3 className="flex items-center gap-2 text-lg font-bold uppercase tracking-wide mb-2">
-                <span>لورم ایپسوم</span>
+              <h3 className="flex items-center space-x-2 text-lg font-bold uppercase tracking-wide mb-2">
                 <svg
                   fill="currentColor"
                   viewBox="0 0 20 20"
@@ -63,17 +61,16 @@ export default function About() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
+                <span>Passion</span>
               </h3>
               <p className="leading-relaxed text-gray-600">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
-                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
-                نیاز، و کاربردهای متنوع با هدف بهبود
+                We are passionate with what we do and love crafting products
+                that can make your life easier and help you succeed. We pay
+                attention to small details and always aiming for the best.
               </p>
             </div>
             <div>
-              <h3 className="flex items-center gap-2 text-lg font-bold uppercase tracking-wide mb-2">
-                <span>لورم ایپسوم</span>
+              <h3 className="flex items-center space-x-2 text-lg font-bold uppercase tracking-wide mb-2">
                 <svg
                   fill="currentColor"
                   viewBox="0 0 20 20"
@@ -86,17 +83,16 @@ export default function About() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
+                <span>Commitment</span>
               </h3>
               <p className="leading-relaxed text-gray-600">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
-                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
-                نیاز، و کاربردهای متنوع با هدف بهبود
+                We are committed to our work and stand by our projects. Our aim
+                is to improve them in every update and offer the most
+                full-featured packages with the smallest possible footprint.
               </p>
             </div>
             <div>
-              <h3 className="flex items-center gap-2 text-lg font-bold uppercase tracking-wide mb-2">
-                <span>لورم ایپسوم</span>
+              <h3 className="flex items-center space-x-2 text-lg font-bold uppercase tracking-wide mb-2">
                 <svg
                   fill="currentColor"
                   viewBox="0 0 20 20"
@@ -109,12 +105,12 @@ export default function About() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
+                <span>Less is More</span>
               </h3>
               <p className="leading-relaxed text-gray-600">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
-                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
-                نیاز، و کاربردهای متنوع با هدف بهبود
+                We believe that design should be invisible and enhance the user
+                experience, not get in the way. This gives room for your content
+                to breath and attracts your users’ attention.
               </p>
             </div>
           </div>
