@@ -1,3 +1,11 @@
+import Link from "next/link";
+
+const footerNavItems = new Map([
+  ["about", "درباره من"],
+  ["gallery", "گالری تصاویر"],
+  ["group-therapy", "گروه درمانی"],
+]);
+
 export const Footer = () => (
   <footer id="page-footer" className="bg-white">
     <div className="flex flex-col md:flex-row-reverse md:justify-between space-y-6 md:space-y-0 text-center md:text-left text-sm lg:text-base container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
@@ -54,15 +62,15 @@ export const Footer = () => (
         </a>
       </nav>
       <nav className="flex gap-2 sm:gap-4">
-        <a href="#" className="font-medium text-gray-900 hover:text-gray-500">
-          درباره من
-        </a>
-        <a href="#" className="font-medium text-gray-900 hover:text-gray-500">
-          گالری تصاویر
-        </a>
-        <a href="#" className="font-medium text-gray-900 hover:text-gray-500">
-          گروه درمانی
-        </a>
+        {Array.from(footerNavItems).map(([href, description]) => (
+          <Link
+            href={href}
+            className="font-medium text-gray-900 hover:text-gray-500"
+            key={href}
+          >
+            {description}
+          </Link>
+        ))}
       </nav>
       <div className="text-gray-600">
         © <span className="font-medium">تمام حقوق مادی و معنوی محفوظ است</span>
