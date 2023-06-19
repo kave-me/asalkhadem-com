@@ -1,10 +1,10 @@
 import "./globals.css";
 import { Footer } from "components/Footer";
-import { Navbar } from "components/Navbar";
 import { DarkNavbar } from "components/Navbar/DarkNavbar";
 import { Inter } from "next/font/google";
 import localFonts from "next/font/local";
 
+// noinspection JSUnusedLocalSymbols
 const inter = Inter({ subsets: ["latin"] });
 const iranSans = localFonts({
   src: [

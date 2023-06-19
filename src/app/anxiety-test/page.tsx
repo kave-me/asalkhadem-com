@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function AnxietyTest() {
   return (
     <main id="page-content" className="flex flex-auto flex-col max-w-full">
