@@ -30,19 +30,19 @@ export default function About() {
             </h3>
           </div>
 
-          <div className="flex gap-2">
+          <div className="flex gap-2 flex-wrap">
             <div>
               <img
                 src="f1.png"
                 alt="Featured Image"
-                className="rounded-lg aspect-[3/4] object-cover origin-center max-w-md"
+                className="rounded-lg aspect-[9/16] object-cover origin-center max-w-md"
               />
             </div>
             <div>
               <img
                 src="f2.png"
                 alt="Featured Image"
-                className="rounded-lg aspect-[3/4] object-cover origin-center max-w-md"
+                className="rounded-lg aspect-[9/16] object-cover origin-center max-w-md"
               />
             </div>
           </div>

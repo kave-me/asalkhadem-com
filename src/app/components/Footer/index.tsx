@@ -1,10 +1,5 @@
+import { footerNavMap } from "config/NavItems";
 import Link from "next/link";
-
-const footerNavItems = new Map([
-  ["about", "درباره من"],
-  ["gallery", "گالری تصاویر"],
-  ["group-therapy", "گروه درمانی"],
-]);
 
 export const Footer = () => (
   <footer id="page-footer" className="bg-white">
@@ -62,7 +57,7 @@ export const Footer = () => (
         </a>
       </nav>
       <nav className="flex gap-2 sm:gap-4">
-        {Array.from(footerNavItems).map(([href, description]) => (
+        {Array.from(footerNavMap).map(([href, description]) => (
           <Link
             href={href}
             className="font-medium text-gray-900 hover:text-gray-500"

@@ -20,10 +20,10 @@ export function CTA() {
                 </h3>
               </div>
 
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center space-y-4 sm:space-y-0 sm:space-x-2">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-4">
                 <a
                   href="#"
-                  className="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-6 py-4 leading-6 rounded border-indigo-700 bg-indigo-700 text-white hover:text-white hover:bg-indigo-800 hover:border-indigo-800 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-700 active:border-indigo-700 mx-4"
+                  className="inline-flex justify-center items-center border font-semibold focus:outline-none px-6 py-4 leading-6 rounded border-indigo-700 bg-indigo-700 text-white hover:text-white hover:bg-indigo-800 hover:border-indigo-800 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-700 active:border-indigo-700 lg:w-1/4 xs:w-1/3 "
                 >
                   <span className={"mx-2"}>رزرو جلسه</span>
                   <svg
@@ -41,7 +41,7 @@ export function CTA() {
                 </a>
                 <a
                   href="#"
-                  className="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-6 py-4 leading-6 rounded border-gray-200 bg-gray-200 text-gray-700 hover:text-gray-700 hover:bg-gray-300 hover:border-gray-300 focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:bg-gray-200 active:border-gray-200"
+                  className="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-6 py-4 leading-6 rounded border-gray-200 bg-gray-200 text-gray-700 hover:text-gray-700 hover:bg-gray-300 hover:border-gray-300 focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:bg-gray-200 active:border-gray-200 lg:w-1/4 xs:w-1/3"
                 >
                   <span className={" mx-2"}>اطلاعات بیشتر</span>
                   <svg

@@ -1,4 +1,4 @@
-import { navItemMap } from "components/Navbar/NavItemMap";
+import { projectNavMap } from "config/NavItems";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -29,7 +29,7 @@ export function Breadcrumb() {
           </li>
           <li>
             <span className="text-gray-300 hover:text-gray-400 cursor-pointer select-none">
-              {navItemMap.get(currentRoute.split("/")[1])}
+              {projectNavMap.get(currentRoute.split("/")[1])}
             </span>
           </li>
         </ol>
