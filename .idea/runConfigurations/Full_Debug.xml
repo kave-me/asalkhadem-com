@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Full Debug" type="CompoundRunConfigurationType">
+    <toRun name="next JavaScript" type="JavascriptDebugType" />
+    <toRun name="next" type="NodeJSConfigurationType" />
+    <method v="2" />
+  </configuration>
+</component>
