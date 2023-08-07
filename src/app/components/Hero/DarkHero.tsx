@@ -1,4 +1,3 @@
-
 export const DarkHero = () => {
 	const H1 = "عسل خادم";
 
@@ -45,9 +44,7 @@ export const DarkHero = () => {
 									/>
 								</svg>
 							</a>
-
 						</div>
-
 					</div>
 				</div>
 				<div className="lg:w-1/2 lg:ml-16 lg:flex lg:justify-center lg:items-center">
@@ -55,7 +52,7 @@ export const DarkHero = () => {
 						<div
 							className="absolute pattern-dots-xl top-0 left-0 w-32 h-48 md:h-96 transform -translate-y-12 -translate-x-16 -rotate-3 scale-[800%] opacity-20 saturate-150 duration-500 filter blur-xl text-green-500"></div>
 						<div
-							className="absolute pattern-dots-xl text-indigo-800 top-0 left-0 w-32 h-48 md:h-96 transform -translate-y-12 -translate-x-16 -rotate-3 "></div>
+							className="absolute pattern-dots-xl text-indigo-800 top-0 left-0 w-32 h-48 md:h-96 transform -translate-y-12 -translate-x-16 -rotate-3"></div>
 						<div
 							className="absolute pattern-dots-xl text-indigo-800 bottom-0 right-0 w-32 h-48 md:h-96 transform translate-y-12 translate-x-16 rotate-3"></div>
 						<div
@@ -71,7 +68,6 @@ export const DarkHero = () => {
 					</div>
 				</div>
 			</div>
-
 		</>
 	);
 };
