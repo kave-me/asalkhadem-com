@@ -1,3 +1,5 @@
+import Image from 'next/image';
+            import heroImage from '../../../public/images/hero-image.jpg';
 import { Navbar } from "components/Navbar";
 
 export function Hero() {
@@ -52,10 +54,12 @@ export function Hero() {
             <div className="absolute pattern-dots-xl text-indigo-100 bottom-0 right-0 w-32 h-48 md:h-96 transform translate-y-12 translate-x-16 rotate-3"></div>
             <div className="absolute rounded-full top-0 right-0 w-32 h-32 bg-yellow-200 bg-opacity-50 -mt-12 -mr-12"></div>
             <div className="absolute rounded-xl bottom-0 left-0 w-32 h-32 bg-blue-200 bg-opacity-50 -mb-10 -ml-10 transform rotate-3"></div>
-            <img
-              src="https://source.unsplash.com/MChSQHxGZrQ/800x1000"
+            <Image
+              src={heroImage}
               alt="Hero Image"
               className="relative rounded-lg mx-auto shadow-lg"
+              width={800}
+              height={1000}
             />
           </div>
         </div>

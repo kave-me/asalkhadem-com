@@ -34,10 +34,10 @@ export function OfferCta() {
 							<div className="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-4 mt-8">
 								<a
 									target="_blank"
-									href="https://www.aparat.com/v/t9UBw"
+									href="https://fa.wikipedia.org/wiki/%D8%AF%D8%B1%D9%85%D8%A7%D9%86_%D9%88%D8%AC%D9%88%D8%AF%DB%8C"
 									className="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-6 py-4 leading-6 rounded border-gray-200 bg-gray-200 text-gray-700 hover:text-gray-700 hover:bg-gray-300 hover:border-gray-300 focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:bg-gray-200 active:border-gray-200 lg:w-1/4 xs:w-1/3"
 								>
-									<span className={"text-gray-500 mx-2"}>اگزیستانسیال در سه دقیقه</span>
+									<span className={"text-gray-500 mx-2"}>مقاله ویکیپدیا</span>
 									<svg
 										fill="currentColor"
 										viewBox="0 0 20 20"
@@ -54,13 +54,13 @@ export function OfferCta() {
 							</div>
 							{/* divider */}
 							<div className="border-b border-gray-200 my-8 lg:my-12"></div>
-							<h3 className="text-3xl md:text-2xl font-extrabold mb-4">درمان {" "}<span
-								className="text-indigo-600">اگزیستانسیال</span>{" "}چگونه به من کمک می کند؟
+							<h3 className="text-3xl md:text-2xl font-extrabold mb-6">درمان {" "}<span
+								className="text-indigo-600">اگزیستانسیال</span>{" "}به درد من هم می‌خوره؟
 							</h3>
-							<h3 className="text-lg md:text-lg md:leading-relaxed font-medium text-gray-600">می‌توان گفت که این روش
-								مانند بازکردن درهای نور به درون ذهن شماست. در مسیر یادگیری با نوآوری‌ها و ابزارهای جدیدی برای تغییر و
-								رشد آشنا می‌شوید و رازهای نهفته درون‌تان را کشف می‌کنید. درمان اگزیستانسیال، چشم‌اندازی جدید به شما و
-								زندگی‌تان می‌بخشد.</h3>
+							<h3 className="text-base md:text-lg md:leading-relaxed font-medium text-gray-600">این روش
+								شبیه نور انداختن به ذهنتونه و بخش‌هایی از خودتون رو نشونتون میده که احتمالا از وجودشون بی خبر بودید تو
+								همین مسیر یادگیریا به مرور زمان با نوآوری‌ها و ابزارهای جدیدی برای تغییر و
+								رشد آشنا می‌شید و رازهای نهفته درون‌تان را کشف می‌کنید.</h3>
 						</div>
 						<div className="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-4">
 							<a
@@ -73,7 +73,7 @@ export function OfferCta() {
 									fill="currentColor"
 									viewBox="0 0 20 20"
 									xmlns="http://www.w3.org/2000/svg"
-									className="opacity-50 hi-solid hi-arrow-left rotate-180 inline-block w-5 h-5 "
+									className="opacity-50 hi-solid hi-arrow-left rotate-180 inline-block w-5 h-5"
 								>
 									<path
 										fillRule="evenodd"
