@@ -24,10 +24,49 @@ function Head({heading, subHead}: HeadProps) {
 					/>
 				</svg>
 			</div>
-			<h2 className="text-2xl md:text-3xl font-extrabold mb-6">{heading}</h2>
+			<h2 className="text-2xl md:text-3xl font-extrabold mb-8">{heading}</h2>
 			<h3 className="text-lg md:text-xl md:leading-relaxed font-medium text-gray-600 lg:w-2/3 mx-auto">
-				{subHead}
+				{/*	<p className="text-justify">*/}
+				سلام! من یک مشاور و مربی روانشناسی هستم، بهتون کمک می‌کنم تا با احساسات
+				و افکار منفی خود کنار بیایید و به زندگی مطلوب خود برسید.
+				{/*</p>*/}
+				{/* photo as first impression */}
 			</h3>
+			<div
+				className="p-2 bg-white rounded-lg my-10 hover:bg-indigo-500 transition relative aspect-[4/1] max-w-2xl mx-auto ">
+				<Image
+					src="/img/hero.png"
+					alt="hero"
+					fill={true}
+					sizes={"100%"}
+					className={"rounded-lg aspect-[4/3] object-cover object-center w-full h-full  shadow-lg drop-shadow-lg bg-black bg-opacity-5 opacity-90 hover:opacity-100 transition cursor-pointer hover:scale-105 active:scale-95 "}
+				/>
+			</div>
+
+			<h4
+				className="text-lg md:text-xl md:leading-relaxed font-bold tracking-tighter text-gray-700 lg:w-2/3 mx-auto">
+
+				روانشناس و روان درمانگر
+			</h4>
+
+
+			<div className="max-w-3xl mx-auto text-base leading-loose tracking-tight text-gray-900 ">
+				<p className="text-justify my-2">
+					من از سال ۱۳۹۲ تا کنون در زمینه مشاوره و مربیگری روانشناسی فعالیت می‌کنم.
+					در این مدت به بیش از ۱۰۰۰ نفر کمک کرده‌ام تا به اهدافشان برسند.
+
+				</p>
+				<p className="text-justify">
+
+					برای این کار از روش‌های مختلفی استفاده می‌کنم که در ادامه به برخی از آن‌ها اشاره می‌کنم.
+
+
+				</p>
+				<p className="text-justify">
+					تخصص اصلی من در رواندرمانی وجودی یا وجودگرایی است. در این روش با احساسات و افکار منفی خود کنار می‌آییم و به
+					زندگی مطلوب خود می‌رسیم.
+				</p>
+			</div>
 		</header>
 	);
 }
@@ -52,7 +91,7 @@ function Card({title, description, imgAddr}: CardProps) {
 			</div>
 			<h4 className="text-lg font-bold mb-2">{title}</h4>
 			<div
-				className="leading-relaxed text-gray-600 mb-3 text-base"
+				className="leading-relaxed text-gray-600 mb-3 text-xs text-justify tracking-tight"
 				role="paragraph"
 			>
 				{description}
@@ -61,10 +100,28 @@ function Card({title, description, imgAddr}: CardProps) {
 	);
 }
 
+function PhotoGallery() {
+	return <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+		{[1, 2, 3, 4].map((x) => (
+			<div
+				key={x}
+				className="p-2 bg-white rounded-lg my-6 hover:bg-indigo-500 transition relative aspect-[4/3] ">
+				<Image
+					src={`/img/gallery/${x}.png`}
+					alt="gallery"
+					fill={true}
+					sizes={"100%"}
+					className={"rounded-lg aspect-[4/3] object-cover object-center w-full h-full  shadow-lg drop-shadow-lg bg-black bg-opacity-5 opacity-90 hover:opacity-100 transition cursor-pointer hover:scale-105 active:scale-95 "}
+				/>
+			</div>
+		))}
+
+	</div>
+
+
+}
+
 export function Services() {
-	const heading = "من کی هستم؟";
-	const subHead =
-		"سلام! من یک مشاور و مربی روانشناسی هستم، بهتون کمک می‌کنم تا با احساسات و افکار منفی خود کنار بیایید و به زندگی مطلوب خود برسید.";
 
 	const cards = [
 		{
@@ -104,20 +161,24 @@ export function Services() {
 			),
 		},
 	];
+	const heading = "من کی هستم؟";
+
+	const subHead =
+		"سلام! من یک مشاور و مربی روانشناسی هستم، بهتون کمک می‌کنم تا با احساسات و افکار منفی خود کنار بیایید و به زندگی مطلوب خود برسید.";
 
 	return (
 		<div className="bg-gray-100">
-			<div className="space-y-16 container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
+			<div
+				className="container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32 space-y-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-50 via-indigo-100 to-gray-100 border-x-2 border-dashed border-indigo-200 border-b-2">
 				<Head heading={heading} subHead={subHead}/>
-				<section className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
-					{cards.map((card, index) => (
-						<Card
-							key={index}
-							title={card.title}
-							imgAddr={card.imgAddr}
-							description={card.description}
-						/>
-					))}
+				<section
+					className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 bg-gradient-to-b from-gray-100 to-indigo-100/30 p-4 rounded-b-lg border-b-2 border-l-2  border-indigo-500/10 border-dashed ">
+
+					{
+						cards.map((card, index) => (<Card key={card.title} {...card}/>))
+					}
+
+
 				</section>
 			</div>
 		</div>

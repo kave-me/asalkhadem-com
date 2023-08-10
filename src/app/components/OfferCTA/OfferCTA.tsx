@@ -20,6 +20,11 @@ export function OfferCta() {
 				<div className="p-10 lg:py-12 lg:px-16 bg-white rounded shadow text-center relative">
 					<div className="space-y-10">
 						<div className="text-center">
+							<p className="text-sm  font-bold  my-7 text-blue-700 opacity-80 font-sans">
+								درمان اگزیستانسیال
+							</p>
+						</div>
+						<div className="text-center">
 							<h2 className="text-3xl md:text-4xl font-extrabold mb-4">درمان {" "}<span
 								className="text-indigo-600">اگزیستانسیال</span>{" "}چیست؟
 							</h2>
