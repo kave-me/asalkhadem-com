@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <main id="page-content" className="flex flex-auto flex-col max-w-full">
@@ -30,17 +32,21 @@ export default function About() {
 
           <div className="flex gap-2 flex-wrap">
             <div>
-              <img
-                src="f1.png"
+              <Image
+                src="/f1.png"
                 alt="Featured Image"
                 className="rounded-lg aspect-[9/16] object-cover origin-center max-w-md"
+                width={500}
+                height={281}
               />
             </div>
             <div>
-              <img
-                src="f2.png"
+              <Image
+                src="/f2.png"
                 alt="Featured Image"
                 className="rounded-lg aspect-[9/16] object-cover origin-center max-w-md"
+                width={500}
+                height={281}
               />
             </div>
           </div>
