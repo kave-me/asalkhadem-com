@@ -15,7 +15,7 @@ export const DarkHero = () => {
   return (
     <>
       <div className="flex flex-col lg:flex-row space-y-16 lg:space-y-0 text-center lg:text-right container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32 bg-gray-800 overflow-hidden font-sans">
-        <div className="lg:w-1/2 lg:flex lg:items-center">
+        <div className="lg:w-1/2 lg:flex lg:items-center relative z-10 ">
           <div>
             <h1 className="text-3xl md:text-6xl font-sans font-black mb-16 text-white">
               دکتر <span className="text-indigo-300">{H1}</span>
@@ -55,7 +55,7 @@ export const DarkHero = () => {
         </div>
         <div className="lg:w-1/2 lg:ml-16 lg:flex lg:justify-center lg:items-center">
           <div className="lg:w-96 mx-5 relative">
-            <div className="absolute pattern-dots-xl top-0 left-0 w-32 h-48 md:h-96 transform -translate-y-12 -translate-x-16 -rotate-3 scale-[800%] opacity-20 saturate-150 duration-500 filter blur-xl text-green-500"></div>
+            <div className="absolute pattern-dots-xl top-0 left-0 w-32 h-48 md:h-96 transform -translate-y-12 -translate-x-16 -rotate-3 scale-[800%] opacity-20 saturate-150 duration-500 filter blur-xl text-green-500 z-0 "></div>
             <div className="absolute pattern-dots-xl text-indigo-800 top-0 left-0 w-32 h-48 md:h-96 transform -translate-y-12 -translate-x-16 -rotate-3"></div>
             <div className="absolute pattern-dots-xl text-indigo-800 bottom-0 right-0 w-32 h-48 md:h-96 transform translate-y-12 translate-x-16 rotate-3"></div>
             <div className="absolute inset-0 rounded-xl bg-gray-600 bg-opacity-20 -m-4 transform rotate-2 hover:rotate-3 transition-all duration-1000 hover:scale-110"></div>
