@@ -5,7 +5,7 @@ interface HeadProps {
 	subHead: string;
 }
 
-function Head({heading, subHead}: HeadProps) {
+function Head({heading}: HeadProps) {
 	return (
 		<header className="text-center">
 			<div className="text-base uppercase font-bold tracking-wider mb-1 text-yellow-400 animate-bounce">
@@ -29,8 +29,6 @@ function Head({heading, subHead}: HeadProps) {
 				{/*	<p className="text-justify">*/}
 				سلام! من یک مشاور و مربی روانشناسی هستم، بهتون کمک می‌کنم تا با احساسات
 				و افکار منفی خود کنار بیایید و به زندگی مطلوب خود برسید.
-				{/*</p>*/}
-				{/* photo as first impression */}
 			</h3>
 			<div
 				className="p-2 bg-white rounded-lg my-10 hover:bg-indigo-500 transition relative aspect-[4/1] max-w-2xl mx-auto ">
@@ -45,7 +43,6 @@ function Head({heading, subHead}: HeadProps) {
 
 			<h4
 				className="text-lg md:text-xl md:leading-relaxed font-bold tracking-tighter text-gray-700 lg:w-2/3 mx-auto">
-
 				روانشناس و روان درمانگر
 			</h4>
 
@@ -57,10 +54,7 @@ function Head({heading, subHead}: HeadProps) {
 
 				</p>
 				<p className="text-justify">
-
 					برای این کار از روش‌های مختلفی استفاده می‌کنم که در ادامه به برخی از آن‌ها اشاره می‌کنم.
-
-
 				</p>
 				<p className="text-justify">
 					تخصص اصلی من در رواندرمانی وجودی یا وجودگرایی است. در این روش با احساسات و افکار منفی خود کنار می‌آییم و به
@@ -98,27 +92,6 @@ function Card({title, description, imgAddr}: CardProps) {
 			</div>
 		</article>
 	);
-}
-
-function PhotoGallery() {
-	return <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-		{[1, 2, 3, 4].map((x) => (
-			<div
-				key={x}
-				className="p-2 bg-white rounded-lg my-6 hover:bg-indigo-500 transition relative aspect-[4/3] ">
-				<Image
-					src={`/img/gallery/${x}.png`}
-					alt="gallery"
-					fill={true}
-					sizes={"100%"}
-					className={"rounded-lg aspect-[4/3] object-cover object-center w-full h-full  shadow-lg drop-shadow-lg bg-black bg-opacity-5 opacity-90 hover:opacity-100 transition cursor-pointer hover:scale-105 active:scale-95 "}
-				/>
-			</div>
-		))}
-
-	</div>
-
-
 }
 
 export function Services() {
@@ -175,7 +148,7 @@ export function Services() {
 					className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 bg-gradient-to-b from-gray-100 to-indigo-100/30 p-4 rounded-b-lg border-b-2 border-l-2  border-indigo-500/10 border-dashed ">
 
 					{
-						cards.map((card, index) => (<Card key={card.title} {...card}/>))
+						cards.map((card) => (<Card key={card.title} {...card}/>))
 					}
 
 
