@@ -23,7 +23,7 @@ export const DarkHero = () => {
             <HeroDescription />
             <div className="flex flex-col sm:flex-row sm:items-center justify-center lg:justify-start space-y-2 sm:space-y-0 sm:gap-2 pt-10 pb-16 text-lg">
               <Link
-                href="about"
+                href="/about"
                 className="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-6 py-4 leading-6 rounded border-gray-700 bg-gray-700 text-white hover:text-white hover:bg-gray-800 hover:border-gray-800 focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:bg-gray-700 active:border-gray-700"
               >
                 <span>درباره من</span>
