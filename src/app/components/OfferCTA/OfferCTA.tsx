@@ -2,6 +2,7 @@ function VideoTutorial() {
 	return (<iframe
 		width="640"
 		height="360"
+		className="rounded-lg shadow-lg"
 		sandbox="allow-scripts allow-same-origin"
 		src="https://www.aparat.com/video/video/embed/videohash/t9UBw/vt/frame?isamp"
 		title="اگزیستانسیالیسم چیست؟"

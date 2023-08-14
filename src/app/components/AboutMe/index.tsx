@@ -94,7 +94,7 @@ function Card({title, description, imgAddr}: CardProps) {
 	);
 }
 
-export function Services() {
+export function AboutMeSection() {
 
 	const cards = [
 		{

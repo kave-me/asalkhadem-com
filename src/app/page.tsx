@@ -1,5 +1,5 @@
 "use client";
-import {Services} from "components/Services";
+import {AboutMeSection} from "components/AboutMe";
 import {DarkHero} from "components/Hero/DarkHero";
 import {JoinCommunity} from "components/JoinCommunity";
 import {OfferCta} from "components/OfferCTA/OfferCTA";
@@ -12,7 +12,7 @@ export default function Home() {
 	return (
 		<main id="page-content" className="flex flex-auto flex-col max-w-full">
 			<DarkHero/>
-			<Services/>
+			<AboutMeSection/>
 			<ClientFeedback/>
 			<OfferCta/>
 			<JoinCommunity/>
