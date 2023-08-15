@@ -1,5 +1,4 @@
 import React, {ReactNode, useState} from 'react';
-import {FaqSection} from 'components/FAQ';
 import {Testimonial} from 'components/Testimonial';
 
 interface TestimonialWrapperProps {

@@ -1,7 +1,5 @@
-import Image from 'next/image';
+
 import Link from 'next/link';
-import {FC} from 'react';
-import {text} from 'stream/consumers';
 
 const TestButton = ({text, href}:{text:string, href:string}) => {
 	return <Link href={href}

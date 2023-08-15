@@ -1,5 +1,3 @@
-import {HavingDoubt} from 'components/OfferCTA/HavingDoubt';
-
 function VideoTutorial() {
 	return (<iframe
 		width="640"
