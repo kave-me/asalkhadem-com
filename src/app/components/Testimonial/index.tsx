@@ -6,7 +6,7 @@ function TestimonialCard({ quote, name, context: time }: any) {
       </div>
       <div className="relative h-full">
         <blockquote className="flex flex-col h-full justify-between items-start ">
-          <p className="font-sans font-medium drop-shadow-sm text-[13px] text-gray-700 leading-8 mb-4 line-clamp-none">
+          <p className=" font-medium drop-shadow-sm text-[13px] text-gray-700 leading-8 mb-4 line-clamp-none">
             {quote}
           </p>
           <footer className="flex items-center gap-4 md:-mr-2.5 md:-mb-1 ">
@@ -107,7 +107,7 @@ export function Testimonial({ show = 4 }: TestimonialCardProps) {
     <div className="bg-[conic-gradient(at_right_center,_var(--tw-gradient-stops))] from-green-100 via-blue-50 via to-indigo-100 via border-y-2 border-dashed border-indigo-200 ">
       <div className="space-y-16 container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
         <div className="text-center">
-          <p className="text-sm  font-bold  mb-7 text-blue-700 opacity-80 font-sans">
+          <p className="text-sm  font-bold  mb-7 text-blue-700 opacity-80 ">
             نظرات مراجعین
           </p>
           <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900/95 drop-shadow-xl ">

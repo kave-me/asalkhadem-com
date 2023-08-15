@@ -1,3 +1,5 @@
+import {HavingDoubt} from 'components/OfferCTA/HavingDoubt';
+
 function VideoTutorial() {
 	return (<iframe
 		width="640"
@@ -10,7 +12,7 @@ function VideoTutorial() {
 		allowFullScreen></iframe>);
 }
 
-export function OfferCta() {
+export function ExplainExisitential() {
 	return (<div className="bg-gray-100 overflow-hidden">
 		<div className="container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
 			<div className="relative">
@@ -21,7 +23,7 @@ export function OfferCta() {
 				<div className="p-10 lg:py-12 lg:px-16 bg-white rounded shadow text-center relative">
 					<div className="space-y-10">
 						<div className="text-center">
-							<p className="text-sm  font-bold  my-7 text-blue-700 opacity-80 font-sans">
+							<p className="text-sm  font-bold  my-7 text-blue-700 opacity-80 ">
 								درمان اگزیستانسیال
 							</p>
 						</div>
@@ -58,40 +60,14 @@ export function OfferCta() {
 									</svg>
 								</a>
 							</div>
-							{/* divider */}
-							<div className="border-b border-gray-200 my-8 lg:my-12"></div>
-							<h3 className="text-3xl md:text-2xl font-extrabold mb-6">درمان {" "}<span
-								className="text-indigo-600">اگزیستانسیال</span>{" "}به درد من هم می‌خوره؟
-							</h3>
-							<h3 className="text-base md:text-lg md:leading-relaxed font-medium text-gray-600">این روش
-								شبیه نور انداختن به ذهنتونه و بخش‌هایی از خودتون رو نشونتون میده که احتمالا از وجودشون بی خبر بودید تو
-								همین مسیر یادگیریا به مرور زمان با نوآوری‌ها و ابزارهای جدیدی برای تغییر و
-								رشد آشنا می‌شید و رازهای نهفته درون‌تان را کشف می‌کنید.</h3>
 						</div>
-						<div className="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-4">
-							<a
-								target="_blank"
-								href="https://pezeshkekhoob.com/doctor/51213-asal-khadem"
-								className="inline-flex justify-center items-center border font-semibold focus:outline-none px-6 py-4 leading-6 rounded border-indigo-700 bg-indigo-700 text-white hover:text-white hover:bg-indigo-800 hover:border-indigo-800 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-700 active:border-indigo-700 lg:w-1/4 xs:w-1/3"
-							>
-								<span className={"mx-2  animate-pulse"}>رزرو جلسه</span>
-								<svg
-									fill="currentColor"
-									viewBox="0 0 20 20"
-									xmlns="http://www.w3.org/2000/svg"
-									className="opacity-50 hi-solid hi-arrow-left rotate-180 inline-block w-5 h-5"
-								>
-									<path
-										fillRule="evenodd"
-										d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-										clipRule="evenodd"
-									></path>
-								</svg>
-							</a>
-						</div>
+						{/* divider */}
 					</div>
 				</div>
+
+				{/*<HavingDoubt/>*/}
 			</div>
 		</div>
 	</div>);
 }
+

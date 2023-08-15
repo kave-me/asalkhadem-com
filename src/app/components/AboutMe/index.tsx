@@ -5,9 +5,9 @@ interface HeadProps {
 	subHead: string;
 }
 
-function Head({heading}: HeadProps) {
+function AboutMeTop({heading}: HeadProps) {
 	return (
-		<header className="text-center">
+		<header className="text-center ">
 			<div className="text-base uppercase font-bold tracking-wider mb-1 text-yellow-400 animate-bounce">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -24,8 +24,8 @@ function Head({heading}: HeadProps) {
 					/>
 				</svg>
 			</div>
-			<h2 className="text-2xl md:text-3xl font-extrabold mb-8">{heading}</h2>
-			<h3 className="text-lg md:text-xl md:leading-relaxed font-medium text-gray-600 lg:w-2/3 mx-auto">
+			<h2 className="text-2xl md:text-4xl font-sans font-black mb-8">{heading}</h2>
+			<h3 className="text-lg md:text-base md:leading-relaxed font-medium text-gray-600 lg:w-2/3 mx-auto">
 				{/*	<p className="text-justify">*/}
 				سلام! من یک مشاور و مربی روانشناسی هستم، بهتون کمک می‌کنم تا با احساسات
 				و افکار منفی خود کنار بیایید و به زندگی مطلوب خود برسید.
@@ -49,7 +49,7 @@ function Head({heading}: HeadProps) {
 
 			<div className="max-w-3xl mx-auto text-base leading-loose tracking-tight text-gray-900 ">
 				<p className="text-justify my-2">
-					من از سال ۱۳۹۲ تا کنون در زمینه مشاوره و مربیگری روانشناسی فعالیت می‌کنم.
+					از سال ۱۳۹۲ تا کنون در زمینه مشاوره و مربیگری روانشناسی فعالیت می‌کنم.
 					در این مدت به بیش از ۱۰۰۰ نفر کمک کرده‌ام تا به اهدافشان برسند.
 
 				</p>
@@ -143,7 +143,7 @@ export function AboutMeSection() {
 		<div className="bg-gray-100">
 			<div
 				className="container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32 space-y-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-50 via-indigo-100 to-gray-100 border-x-2 border-dashed border-indigo-200 border-b-2">
-				<Head heading={heading} subHead={subHead}/>
+				<AboutMeTop heading={heading} subHead={subHead}/>
 				<section
 					className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 bg-gradient-to-b from-gray-100 to-indigo-100/30 p-4 rounded-b-lg border-b-2 border-l-2  border-indigo-500/10 border-dashed ">
 

@@ -14,10 +14,10 @@ export const DarkHero = () => {
   const H1 = "عسل خادم";
   return (
     <>
-      <div className="flex flex-col lg:flex-row space-y-16 lg:space-y-0 text-center lg:text-right container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32 bg-gray-800 overflow-hidden font-sans">
+      <div className="flex flex-col lg:flex-row space-y-16 lg:space-y-0 text-center lg:text-right container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32 bg-gray-800 overflow-hidden ">
         <div className="lg:w-1/2 lg:flex lg:items-center relative z-10 ">
           <div>
-            <h1 className="text-3xl md:text-6xl font-sans font-black mb-16 text-white">
+            <h1 className="text-3xl md:text-6xl  font-black mb-16 text-white font-sans ">
               دکتر <span className="text-indigo-300">{H1}</span>
             </h1>
             <HeroDescription />

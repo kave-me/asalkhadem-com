@@ -1,12 +1,15 @@
 import "./globals.css";
 import { Footer } from "components/Footer";
 import { DarkNavbar } from "components/Navbar/DarkNavbar";
-import { Inter } from "next/font/google";
+import {Inter, Vazirmatn} from "next/font/google";
 import localFonts from "next/font/local";
 import Head from "next/head";
 
 // noinspection JSUnusedLocalSymbols
 const inter = Inter({ subsets: ["latin"] });
+const vazirMatn = Vazirmatn(
+  {subsets:["arabic", "latin", "latin-ext"]}
+)
 const iranSans = localFonts({
   src: [
     {
@@ -53,9 +56,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fa" dir={"rtl"}>
-    <Head><link rel="icon" href="/favicon.ico" sizes="any" /></Head>
+    <Head>
+      <link rel='icon' href='/favicon.ico'/>
+    </Head>
       <body
-        className={`${iranSans.className} flex flex-col mx-auto w-full min-h-screen bg-gray-900`}
+        className={`${vazirMatn.className} flex flex-col mx-auto w-full min-h-screen bg-gray-900`}
       >
         <DarkNavbar />
         {children}

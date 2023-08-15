@@ -4,7 +4,7 @@ export function JoinCommunity() {
   return (
     <div className="bg-white py-16 border-y-2 border-dashed border-indigo-100">
       <div className="text-center">
-        <p className="text-sm  font-bold  mt-20 text-blue-700 opacity-80 font-sans">
+        <p className="text-sm  font-bold  mt-20 text-blue-700 opacity-80 ">
           درمان اگزیستانسیال
         </p>
       </div>

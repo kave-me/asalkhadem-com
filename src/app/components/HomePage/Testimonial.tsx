@@ -1,5 +1,5 @@
 import React, {ReactNode, useState} from 'react';
-import {FAQ} from 'components/FAQ';
+import {FaqSection} from 'components/FAQ';
 import {Testimonial} from 'components/Testimonial';
 
 interface TestimonialWrapperProps {
@@ -12,11 +12,11 @@ interface TestimonialWrapperProps {
 const TestimonialWrapper = ({children, keyID}: TestimonialWrapperProps) => {
 	return <div className="bg-gray-100" key={keyID}>{children}</div>;
 };
-export const ClientFeedback = () => {
+export const TestimonialSection = () => {
 	const [open, setOpen] = useState(false);
 	return (
 		<>
-			<FAQ/>
+			{/*<FAQ/>*/}
 			<TestimonialWrapper keyID="testimonial-wrapper">
 				{!open ? <Testimonial show={4}/> : <Testimonial show={10}/>}
 				<button
