@@ -1,7 +1,7 @@
-
 import Link from 'next/link';
+import {FaConfluence} from 'react-icons/fa';
 
-const TestButton = ({text, href}:{text:string, href:string}) => {
+const TestButton = ({text, href}: { text: string, href: string }) => {
 	return <Link href={href}
 	             className="w-full sm:w-auto bg-indigo-800  hover:bg-indigo-700 focus:ring-4 focus:outline-none focus:ring-indigo-300 text-gray-100 rounded-lg inline-flex items-center justify-center px-8 py-4 ">
 		<span className="text-right">
@@ -13,18 +13,33 @@ const TestButton = ({text, href}:{text:string, href:string}) => {
 function Buttons() {
 	return <div className="items-center justify-center flex flex-wrap gap-5">
 		<TestButton text={"شروع تست"} href={"/anxiety-test"}/>
+
+
 		<TestButton text={"نتیجه ی این تست معتبره؟ 🤔"} href={"/anxiety-test"}/>
-</div>
+
+	</div>
+}
+
+function PsyTestEvaluation() {
+	// place holder
+	return (
+		<div
+			className="w-1/2 mx-auto my-16 h-48 bg-gray-700 border-2 border-gray-200 rounded-lg text-center cursor-pointer">
+			<FaConfluence className={"text-4xl text-gray-50 mx-auto h-full animate-spin "}/>
+		</div>
+	)
 }
 
 export function PsychologyTest() {
-	return(
-		<div className="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-			<h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Work fast from anywhere</h5>
-			<p className="mb-5 text-base text-gray-500 sm:text-lg  dark:text-gray-400">
-				 			با تست کردن خصوصیت های شخصیتی خود می توانید از میزان اضطراب و استرس خود آگاه شوید و با کمک راهنمایی که دریافت خواهید کرد می توانید این میزان را کاهش دهید.
-			</p>
-				<Buttons/>
+	return (
+		<div
+			className="w-full p-4 text-center bg-gray-900 border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700  ">
+			<h5 className="mb-2 text-3xl font-bold text-gray-100 dark:text-white ">تست افسردگی</h5>
+			{/*<p className="mb-5 text-base text-gray-200 sm:text-lg  ">*/}
+			{/*	 			با تست کردن خصوصیت های شخصیتی خود می توانید از میزان اضطراب و استرس خود آگاه شوید و با کمک راهنمایی که دریافت خواهید کرد می توانید این میزان را کاهش دهید.*/}
+			{/*</p>*/}
+			<PsyTestEvaluation/>
+			<Buttons/>
 		</div>
 	)
 	// return <article className="flex-none h-screen bg-gray-900">

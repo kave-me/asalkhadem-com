@@ -2,7 +2,7 @@
 import {AboutMeSection} from "components/AboutMe";
 import {DarkHero} from "components/Hero/DarkHero";
 import {JoinCommunity} from "components/JoinCommunity";
-import {ExplainExisitential} from "components/OfferCTA/ExplainExisitential";
+import {VideoIntroToExistentialism} from "components/OfferCTA/VideoIntroToExistentialism";
 import {PsychologyTest} from "components/TestCta/PsychologyTest";
 import React from "react";
 import {TestimonialSection} from 'components/HomePage/Testimonial';
@@ -17,10 +17,10 @@ export default function Home() {
 			<AboutMeSection/>
 			<FaqSection/>
 			<TestimonialSection/>
-			<ExplainExisitential/>
-			{/*<JoinCommunity/>*/}
+			<VideoIntroToExistentialism/>
 			<HavingDoubt/>
-			{/*<PsychologyTest/>*/}
+			<JoinCommunity/>
+			<PsychologyTest/>
 		</main>
 	);
 }
