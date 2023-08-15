@@ -1,7 +1,7 @@
 import React from "react";
 
-export function JoinCommunity() {
-	return (<div className="bg-white py-16 border-y-2 border-dashed border-indigo-100">
+export function EssenceAndExistenceSection() {
+	return (<section className="bg-white py-16 border-y-2 border-dashed border-indigo-100">
 		<div className="text-center">
 			<p className="text-sm  font-bold  mb-10 text-blue-700 opacity-80 ">اگزیستانسیالیسم</p>
 		</div>
@@ -39,5 +39,5 @@ export function JoinCommunity() {
 				</p>
 			</div>
 		</div>
-	</div>);
+	</section>);
 }
