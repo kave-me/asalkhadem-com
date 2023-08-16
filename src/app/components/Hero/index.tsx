@@ -1,5 +1,5 @@
-import Image from 'next/image';
-            import heroImage from '../../../public/images/hero-image.jpg';
+import Image from "next/image";
+import heroImage from "../../../public/images/hero-image.jpg";
 import { Navbar } from "components/Navbar";
 
 export function Hero() {
