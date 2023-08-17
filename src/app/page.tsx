@@ -7,7 +7,7 @@ import { VideoIntroToExistentialism } from "components/OfferCTA/VideoIntroToExis
 import { TestimonialSection } from "components/HomePage/Testimonial";
 import { FaqSection } from "components/FAQ";
 import { HavingDoubt } from "components/OfferCTA/HavingDoubt";
-import { DontneedSection } from "components/NewsLetter/dontneedSection";
+import { DontNeedSection } from "components/NewsLetter/dontNeedSection";
 import { ModalVideo } from "components/modalVideo";
 import { ContactMeSection } from "components/ContactMe/ContactMeSection";
 
@@ -38,7 +38,7 @@ export default function Home() {
       <HavingDoubt />
       <VideoIntroToExistentialism />
       {/*<PsychologyTest/>*/}
-      <DontneedSection />
+      <DontNeedSection />
       <EssenceAndExistenceSection />
       {/*<ContactMeSection />*/}
     </main>

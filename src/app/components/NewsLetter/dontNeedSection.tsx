@@ -1,16 +1,9 @@
-import {
-  FaAdjust,
-  FaAirFreshener,
-  FaInstagram,
-  FaRedo,
-  FaTelegram,
-} from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { FaTriangleExclamation } from "react-icons/fa6";
-import { ModalVideo } from "components/modalVideo";
 import React from "react";
 import { VideoBox } from "components/Video/VideoBox";
 
-export function DontneedSection() {
+export function DontNeedSection() {
   return (
     <section>
       {/* CTA box */}
