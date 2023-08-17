@@ -1,12 +1,7 @@
 "use client";
 import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-
-interface ModalVideoProps {
-  video: string;
-  videoWidth: number;
-  videoHeight: number;
-}
+import { ModalVideoProps } from "components/Video/modalVideoProps";
 
 export function ModalVideo({
   video,

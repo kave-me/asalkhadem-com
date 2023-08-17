@@ -1,8 +1,4 @@
-export function SimpleCard({
-  title = "عنوان",
-  description = "توضیحات",
-  credit = "عسل خادم",
-}) {
+export function SimpleCard({ description = "توضیحات", credit = "عسل خادم" }) {
   return (
     <div>
       <p className="leading-relaxed text-gray-700">

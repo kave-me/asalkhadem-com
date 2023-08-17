@@ -76,7 +76,7 @@ const claims: iClaim[] = [
 
 export const HavingDoubt = () => {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-gradient-to-b from-white to-gray-100 ">
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
         <div className="mb-8 max-w-screen-md lg:mb-16">
           <h3 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
