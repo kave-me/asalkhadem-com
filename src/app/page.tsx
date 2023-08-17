@@ -23,30 +23,30 @@ function ContactMeSection() {
   return (
     <section className="bg-gray-100 py-16  ">
       <div
-        className={`container mx-auto px-4 py-16 lg:px-8 lg:py-32 space-y-10 bg-indigo-100  border-dashed border-indigo-200 border-2 max-w-max  `}
+        className={`container mx-auto max-w-max space-y-10 border-2 border-dashed border-indigo-200 bg-indigo-100  px-4 py-16 lg:px-8 lg:py-32  `}
       >
         <div className="text-center">
-          <p className="text-sm  font-bold  mb-10 text-blue-700 opacity-80  ">
+          <p className="mb-10  text-sm  font-bold text-blue-700 opacity-80  ">
             تماس با من
           </p>
         </div>
         <div className="text-center">
-          <h3 className="text-3xl md:text-4xl font-extrabold mb-6">
+          <h3 className="mb-6 text-3xl font-extrabold md:text-4xl">
             تمایل دارید با من در ارتباط باشید؟
           </h3>
-          <p className="text-base  md:leading-relaxed font-medium text-gray-600 lg:w-2/3 mx-auto pb-16">
+          <p className="mx-auto  pb-16 text-base font-medium text-gray-600 md:leading-relaxed lg:w-2/3">
             می‌توانید از طریق پیام کوتاه و شبکه‌های اجتماعی زیر با من در ارتباط
             باشید.
           </p>
 
-          <ul className="text-center text-6xl mx-auto flex justify-center gap-5 flex-wrap items-center bg-teal-200 p-8 rounded-lg shadow max-w-max  bg-opacity-30 ">
+          <ul className="mx-auto flex max-w-max flex-wrap items-center justify-center gap-5 rounded-lg bg-teal-200 bg-opacity-30 p-8 text-center text-6xl  shadow ">
             <li className="inline-block">
               <a
                 href="https://wa.me/00989389194334"
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaWhatsapp className="text-6xl text-green-400 hover:text-green-600 drop-shadow hover:scale-105 " />
+                <FaWhatsapp className="text-6xl text-green-400 drop-shadow hover:scale-105 hover:text-green-600 " />
               </a>
             </li>
             <li className="inline-block">
@@ -55,7 +55,7 @@ function ContactMeSection() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaInstagram className="text-6xl text-fuchsia-500 hover:text-fuchsia-500 drop-shadow hover:scale-105 " />
+                <FaInstagram className="text-6xl text-fuchsia-500 drop-shadow hover:scale-105 hover:text-fuchsia-500 " />
               </a>
             </li>
             <li className="inline-block">
@@ -64,7 +64,7 @@ function ContactMeSection() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaTelegram className="text-6xl text-blue-400 hover:text-blue-500 drop-shadow hover:scale-105 " />
+                <FaTelegram className="text-6xl text-blue-400 drop-shadow hover:scale-105 hover:text-blue-500 " />
               </a>
             </li>
             <li className="inline-block">
@@ -73,17 +73,17 @@ function ContactMeSection() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaSkype className="text-6xl text-blue-400/90 hover:text-blue-500 drop-shadow hover:scale-105 " />
+                <FaSkype className="text-6xl text-blue-400/90 drop-shadow hover:scale-105 hover:text-blue-500 " />
               </a>
             </li>
             <li className="inline-block">
               <a href="tel:00989201425226" target="_blank" rel="noreferrer">
-                <FaPhone className="text-6xl text-blue-400 hover:text-blue-500 drop-shadow hover:scale-105 " />
+                <FaPhone className="text-6xl text-blue-400 drop-shadow hover:scale-105 hover:text-blue-500 " />
               </a>
             </li>
             <li className="inline-block">
               <a href="tel:00989389194334" target="_blank" rel="noreferrer">
-                <FaPhone className="text-6xl text-green-400 hover:text-green-500 drop-shadow hover:scale-105 " />
+                <FaPhone className="text-6xl text-green-400 drop-shadow hover:scale-105 hover:text-green-500 " />
               </a>
             </li>
           </ul>
@@ -123,13 +123,10 @@ async function getData() {
 }
 
 export default function Home() {
-  // fetch the video from the link below:
-  // https://www.aparat.com/etc/api/video/videohash/rzKus
-  // and use it in ModalVideo component
   const [videoSrc, setVideoSrc] = React.useState<string>("");
   const tmp = getData();
   return (
-    <main id="page-content" className="flex flex-auto flex-col max-w-full">
+    <main id="page-content" className="flex max-w-full flex-auto flex-col">
       <DarkHero />
       {/* Hero image */}
       <ModalVideo video={videoSrc} videoWidth={1920} videoHeight={1080} />

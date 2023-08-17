@@ -1,16 +1,16 @@
 export function NewsLetterSection() {
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="pb-12 md:pb-20">
           {/* CTA box */}
           <div
-            className="relative bg-gray-900 rounded py-10 px-8 md:py-16 md:px-12 shadow-2xl overflow-hidden"
+            className="relative overflow-hidden rounded bg-gray-900 px-8 py-10 shadow-2xl md:px-12 md:py-16"
             data-aos="zoom-y-out"
           >
             {/* Background illustration */}
             <div
-              className="absolute right-0 bottom-0 pointer-events-none hidden lg:block"
+              className="pointer-events-none absolute bottom-0 right-0 hidden lg:block"
               aria-hidden="true"
             >
               <svg width="428" height="328" xmlns="http://www.w3.org/2000/svg">
@@ -92,28 +92,28 @@ export function NewsLetterSection() {
               </svg>
             </div>
 
-            <div className="relative flex flex-col lg:flex-row justify-between items-center">
+            <div className="relative flex flex-col items-center justify-between lg:flex-row">
               {/* CTA content */}
-              <div className="text-center lg:text-left lg:max-w-xl">
-                <h3 className="h3 text-white mb-2">
+              <div className="text-center lg:max-w-xl lg:text-left">
+                <h3 className="h3 mb-2 text-white">
                   Want more tutorials & guides?
                 </h3>
-                <p className="text-gray-300 text-lg mb-6">
+                <p className="mb-6 text-lg text-gray-300">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit nemo
                   expedita voluptas culpa sapiente.
                 </p>
 
                 {/* CTA form */}
                 <form className="w-full lg:w-auto">
-                  <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
+                  <div className="mx-auto flex max-w-xs flex-col justify-center sm:max-w-md sm:flex-row lg:mx-0">
                     <input
                       type="email"
-                      className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500"
+                      className="form-input mb-2 w-full appearance-none rounded-sm border border-gray-700 bg-gray-800 px-4 py-3 text-white placeholder-gray-500 focus:border-gray-600 sm:mb-0 sm:mr-2"
                       placeholder="Your email…"
                       aria-label="Your email…"
                     />
                     <a
-                      className="btn text-white bg-blue-600 hover:bg-blue-700 shadow"
+                      className="btn bg-blue-600 text-white shadow hover:bg-blue-700"
                       href="#0"
                     >
                       Subscribe
@@ -121,7 +121,7 @@ export function NewsLetterSection() {
                   </div>
                   {/* Success message */}
                   {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
-                  <p className="text-sm text-gray-400 mt-3">
+                  <p className="mt-3 text-sm text-gray-400">
                     No spam. You can unsubscribe at any time.
                   </p>
                 </form>

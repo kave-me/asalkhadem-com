@@ -6,7 +6,7 @@ export function NavbarLogo() {
     <div>
       <Link
         href="/"
-        className="inline-flex items-center font-bold text-lg tracking-wide text-white hover:opacity-75"
+        className="inline-flex items-center text-lg font-bold tracking-wide text-white hover:opacity-75"
       >
         <ChevronRight />
         {/*<span className={"mx-1 text-red-200"}>دکتر خادم</span>*/}

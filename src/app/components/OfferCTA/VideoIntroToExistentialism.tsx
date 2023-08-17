@@ -15,29 +15,29 @@ function VideoTutorial() {
 
 export function VideoIntroToExistentialism() {
   return (
-    <div className="bg-gray-100 overflow-hidden">
-      <div className="container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
+    <div className="overflow-hidden bg-gray-100">
+      <div className="container mx-auto px-4 py-16 lg:px-8 lg:py-32 xl:max-w-7xl">
         <div className="relative">
-          <div className="pattern-dots-lg text-gray-300 absolute top-0 right-0 w-32 h-32 lg:w-48 lg:h-48 transform translate-x-12 -translate-y-16"></div>
-          <div className="pattern-dots-lg text-gray-300 absolute bottom-0 left-0 w-32 h-32 lg:w-48 lg:h-48 transform -translate-x-12 translate-y-16"></div>
-          <div className="p-10 lg:py-12 lg:px-16 bg-white rounded shadow text-center relative">
+          <div className="absolute right-0 top-0 h-32 w-32 -translate-y-16 translate-x-12 transform text-gray-300 pattern-dots-lg lg:h-48 lg:w-48"></div>
+          <div className="absolute bottom-0 left-0 h-32 w-32 -translate-x-12 translate-y-16 transform text-gray-300 pattern-dots-lg lg:h-48 lg:w-48"></div>
+          <div className="relative rounded bg-white p-10 text-center shadow lg:px-16 lg:py-12">
             <div className="space-y-10">
               <div className="text-center">
-                <p className="text-sm  font-bold  mb-4 text-blue-700 opacity-80 ">
+                <p className="mb-4  text-sm  font-bold text-blue-700 opacity-80 ">
                   گزیده ای از اگزیستانسیالیسم
                 </p>
               </div>
               <div className="text-center">
-                <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
+                <h2 className="mb-4 text-3xl font-extrabold md:text-4xl">
                   درمان <span className="text-indigo-600">اگزیستانسیال</span>{" "}
                   چیست؟
                 </h2>
-                <h3 className="text-lg md:text-lg md:leading-relaxed font-medium text-gray-600 py-8">
+                <h3 className="py-8 text-lg font-medium text-gray-600 md:text-lg md:leading-relaxed">
                   این درمان به شما کمک می‌کند تا بتوانید در مواجهه با انتخابات
                   مهم و تصمیمات زندگی خود، تحمل اضطراب و استرس را تجربه کنید و
                   با شرایط پیچیده و آشفته زندگی، به خوبی سازگار شوید.
                 </h3>
-                <div className="py-8 mx-auto flex justify-center">
+                <div className="mx-auto flex justify-center py-8">
                   <VideoTutorial />
                 </div>
               </div>

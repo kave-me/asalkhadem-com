@@ -1,14 +1,14 @@
 export default function Consultation() {
   return (
-    <main id="page-content" className="flex flex-auto flex-col max-w-full">
+    <main id="page-content" className="flex max-w-full flex-auto flex-col">
       <div className="bg-gray-100">
-        <div className="space-y-16 container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
+        <div className="container mx-auto space-y-16 px-4 py-16 lg:px-8 lg:py-32 xl:max-w-7xl">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="w-24 h-24 text-yellow-400 mx-auto"
+              className="mx-auto h-24 w-24 text-yellow-400"
             >
               <path
                 fillRule="evenodd"
@@ -17,10 +17,10 @@ export default function Consultation() {
               />
             </svg>
 
-            <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
+            <h2 className="mb-6 text-3xl font-extrabold md:text-4xl">
               ایپسوم <span className="font-light">لورم لورم</span>
             </h2>
-            <h3 className="text-lg md:text-xl md:leading-relaxed font-medium lg:w-1/2 text-gray-600">
+            <h3 className="text-lg font-medium text-gray-600 md:text-xl md:leading-relaxed lg:w-1/2">
               دکتر عسل خادم دانش پژوه دکتری تخصصی روانشناسی سلامت روانشناس و
               روان درمانگر روان درمانی فردی: - اضطراب و افسردگی - احساس پوچی و
               بی هدفی (خلاء وجودی) رواندرمانی بین فردی و رابطه گروه درمانی
@@ -33,27 +33,27 @@ export default function Consultation() {
               <img
                 src="f1.png"
                 alt="Featured Image"
-                className="rounded-lg aspect-[3/4] object-cover origin-center max-w-md"
+                className="aspect-[3/4] max-w-md origin-center rounded-lg object-cover"
               />
             </div>
             <div>
               <img
                 src="f2.png"
                 alt="Featured Image"
-                className="rounded-lg aspect-[3/4] object-cover origin-center max-w-md"
+                className="aspect-[3/4] max-w-md origin-center rounded-lg object-cover"
               />
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+          <div className="grid grid-cols-1 gap-16 md:grid-cols-3">
             <div>
-              <h3 className="flex items-center gap-2 text-lg font-bold uppercase tracking-wide mb-2">
+              <h3 className="mb-2 flex items-center gap-2 text-lg font-bold uppercase tracking-wide">
                 <span>لورم ایپسوم</span>
                 <svg
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="text-red-500 hi-solid hi-heart inline-block w-5 h-5"
+                  className="hi-solid hi-heart inline-block h-5 w-5 text-red-500"
                 >
                   <path
                     fillRule="evenodd"
@@ -70,13 +70,13 @@ export default function Consultation() {
               </p>
             </div>
             <div>
-              <h3 className="flex items-center gap-2 text-lg font-bold uppercase tracking-wide mb-2">
+              <h3 className="mb-2 flex items-center gap-2 text-lg font-bold uppercase tracking-wide">
                 <span>لورم ایپسوم</span>
                 <svg
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="text-blue-500 hi-solid hi-arrow-down inline-block w-5 h-5"
+                  className="hi-solid hi-arrow-down inline-block h-5 w-5 text-blue-500"
                 >
                   <path
                     fillRule="evenodd"
@@ -93,13 +93,13 @@ export default function Consultation() {
               </p>
             </div>
             <div>
-              <h3 className="flex items-center gap-2 text-lg font-bold uppercase tracking-wide mb-2">
+              <h3 className="mb-2 flex items-center gap-2 text-lg font-bold uppercase tracking-wide">
                 <span>لورم ایپسوم</span>
                 <svg
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="text-pink-500 hi-solid hi-cube-transparent inline-block w-5 h-5"
+                  className="hi-solid hi-cube-transparent inline-block h-5 w-5 text-pink-500"
                 >
                   <path
                     fillRule="evenodd"

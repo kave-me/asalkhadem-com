@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 export function Breadcrumb() {
   const currentRoute = usePathname();
   return (
-    <div className="space-y-1 text-gray-100 grow-1  flex flex-col text-center sm:flex-row sm:items-center sm:justify-between  sm:space-y-0 container xl:max-w-7xl mx-auto mt-10 px-10 py-2 w-full bg-blue-400/5">
+    <div className="grow-1 container mx-auto  mt-10 flex w-full flex-col space-y-1 bg-blue-400/5  px-10 py-2 text-center text-gray-100 sm:flex-row sm:items-center sm:justify-between sm:space-y-0 xl:max-w-7xl">
       <nav>
         <ol className="flex items-center justify-center sm:justify-start">
           <li>
@@ -13,9 +13,9 @@ export function Breadcrumb() {
               خانه
             </Link>
           </li>
-          <li className="flex items-center px-1 sm:px-2 opacity-25 rotate-180">
+          <li className="flex rotate-180 items-center px-1 opacity-25 sm:px-2">
             <svg
-              className="hi-solid hi-chevron-right inline-block w-6 h-6"
+              className="hi-solid hi-chevron-right inline-block h-6 w-6"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ export function Breadcrumb() {
             </svg>
           </li>
           <li>
-            <span className="text-gray-300 hover:text-gray-400 cursor-pointer select-none">
+            <span className="cursor-pointer select-none text-gray-300 hover:text-gray-400">
               {projectNavMap.get(currentRoute.split("/")[1])}
             </span>
           </li>

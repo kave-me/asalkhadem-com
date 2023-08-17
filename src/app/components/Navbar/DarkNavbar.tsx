@@ -12,11 +12,11 @@ export const DarkNavbar = () => {
   return (
     <header
       id="page-header"
-      className="flex flex-none items-center py-10 flex-wrap"
+      className="flex flex-none flex-wrap items-center py-10"
     >
-      <div className="flex flex-col text-center sm:flex-row sm:items-center sm:justify-between space-y-6 sm:space-y-0 container xl:max-w-7xl mx-auto px-4 lg:px-10 w-full flex-wrap ">
+      <div className="container mx-auto flex w-full flex-col flex-wrap space-y-6 px-4 text-center sm:flex-row sm:items-center sm:justify-between sm:space-y-0 lg:px-10 xl:max-w-7xl ">
         <NavbarLogo />
-        <nav className=" flex gap-4 sm:gap-6 items-center justify-center ">
+        <nav className=" flex items-center justify-center gap-4 sm:gap-6 ">
           {Array.from(navBarItemMap).map(([href, title]) => (
             <Link
               href={href}
@@ -28,10 +28,10 @@ export const DarkNavbar = () => {
           ))}
           <a
             href="tel:00989389194334"
-            className="px-6 py-2 text-base font-semibold text-gray-50 bg-green-600 rounded shadow hover:bg-green-500 "
+            className="rounded bg-green-600 px-6 py-2 text-base font-semibold text-gray-50 shadow hover:bg-green-500 "
           >
             تماس
-            <FaPhone className="inline-block w-5 h-5 mr-2" />
+            <FaPhone className="mr-2 inline-block h-5 w-5" />
           </a>
         </nav>
       </div>

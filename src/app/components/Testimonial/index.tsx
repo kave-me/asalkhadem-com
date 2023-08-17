@@ -1,18 +1,18 @@
 function TestimonialCard({ quote, name, context: time }: any) {
   return (
-    <div className="px-6 pt-14 pb-6 md:px-8 md:pb-6 relative bg-white shadow-sm rounded">
-      <div className="absolute top-0 right-0 text-8xl mt-2 mr-5 text-gray-200 opacity-75 font-serif">
+    <div className="relative rounded bg-white px-6 pb-6 pt-14 shadow-sm md:px-8 md:pb-6">
+      <div className="absolute right-0 top-0 mr-5 mt-2 font-serif text-8xl text-gray-200 opacity-75">
         “
       </div>
       <div className="relative h-full">
-        <blockquote className="flex flex-col h-full justify-between items-start ">
-          <p className=" font-medium drop-shadow-sm text-[13px] text-gray-700 leading-8 mb-4 line-clamp-none">
+        <blockquote className="flex h-full flex-col items-start justify-between ">
+          <p className=" mb-4 line-clamp-none text-[13px] font-medium leading-8 text-gray-700 drop-shadow-sm">
             {quote}
           </p>
-          <footer className="flex items-center gap-4 md:-mr-2.5 md:-mb-1 ">
-            <span className="rounded-full overflow-hidden w-12 h-12  border-2 border-gray-100 bg-gray-50">
+          <footer className="flex items-center gap-4 md:-mb-1 md:-mr-2.5 ">
+            <span className="h-12 w-12 overflow-hidden rounded-full  border-2 border-gray-100 bg-gray-50">
               <svg
-                className=" w-full h-full text-gray-300 "
+                className=" h-full w-full text-gray-300 "
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -25,10 +25,10 @@ function TestimonialCard({ quote, name, context: time }: any) {
               </svg>
             </span>
             <div>
-              <p className="font-semibold text-blue-600 hover:text-blue-400 mb-1 text-sm opacity-80 ">
+              <p className="mb-1 text-sm font-semibold text-blue-600 opacity-80 hover:text-blue-400 ">
                 {name}
               </p>
-              <p className="text-gray-400 font-light text-xs opacity-80 ">
+              <p className="text-xs font-light text-gray-400 opacity-80 ">
                 {time}
               </p>
             </div>
@@ -104,18 +104,18 @@ export function Testimonial({ show = 4 }: TestimonialCardProps) {
   ];
 
   return (
-    <div className="bg-[conic-gradient(at_right_center,_var(--tw-gradient-stops))] from-green-100 via-blue-50 via to-indigo-100 via border-y-2 border-dashed border-indigo-200 ">
-      <div className="space-y-16 container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
+    <div className="via via border-y-2 border-dashed border-indigo-200 bg-[conic-gradient(at_right_center,_var(--tw-gradient-stops))] from-green-100 via-blue-50 to-indigo-100 ">
+      <div className="container mx-auto space-y-16 px-4 py-16 lg:px-8 lg:py-32 xl:max-w-7xl">
         <div className="text-center">
-          <p className="text-sm  font-bold  mb-7 text-blue-700 opacity-80 ">
+          <p className="mb-7  text-sm  font-bold text-blue-700 opacity-80 ">
             نظرات مراجعین
           </p>
-          <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900/95 drop-shadow-xl ">
+          <h2 className="text-3xl font-extrabold text-gray-900/95 drop-shadow-xl md:text-5xl ">
             تجربه دیگران از مشاوره
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
           {data.map((item, index) => {
             if (index < show) {
               return <TestimonialCard key={index} {...item} />;

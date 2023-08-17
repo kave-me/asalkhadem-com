@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function HeroDescription() {
   return (
-    <h2 className="text-lg md:text-xl md:leading-tight font-medium text-indigo-200 text-center my-10">
+    <h2 className="my-10 text-center text-lg font-medium text-indigo-200 md:text-xl md:leading-tight">
       <span>دکترای تخصصی روانشناسی سلامت</span>
       <br />
       روانشناس و روان درمانگر
@@ -14,24 +14,24 @@ export const DarkHero = () => {
   const H1 = "عسل خادم";
   return (
     <>
-      <div className="flex flex-col lg:flex-row space-y-16 lg:space-y-0 text-center lg:text-right container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32 bg-gray-800 overflow-hidden ">
-        <div className="lg:w-1/2 lg:flex lg:items-center relative z-10 ">
+      <div className="container mx-auto flex flex-col space-y-16 overflow-hidden bg-gray-800 px-4 py-16 text-center lg:flex-row lg:space-y-0 lg:px-8 lg:py-32 lg:text-right xl:max-w-7xl ">
+        <div className="relative z-10 lg:flex lg:w-1/2 lg:items-center ">
           <div>
-            <h1 className="text-3xl md:text-6xl  font-black mb-16 text-white font-sans ">
+            <h1 className="mb-16 font-sans  text-3xl font-black text-white md:text-6xl ">
               دکتر <span className="text-indigo-300">{H1}</span>
             </h1>
             <HeroDescription />
-            <div className="flex flex-col sm:flex-row sm:items-center justify-center lg:justify-start space-y-2 sm:space-y-0 sm:gap-2 pt-10 pb-16 text-lg">
+            <div className="flex flex-col justify-center space-y-2 pb-16 pt-10 text-lg sm:flex-row sm:items-center sm:gap-2 sm:space-y-0 lg:justify-start">
               <Link
                 href="/about"
-                className="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-6 py-4 leading-6 rounded border-gray-700 bg-gray-700 text-white hover:text-white hover:bg-gray-800 hover:border-gray-800 focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:bg-gray-700 active:border-gray-700"
+                className="inline-flex items-center justify-center space-x-2 rounded border border-gray-700 bg-gray-700 px-6 py-4 font-semibold leading-6 text-white hover:border-gray-800 hover:bg-gray-800 hover:text-white focus:outline-none focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:border-gray-700 active:bg-gray-700"
               >
                 <span>درباره من</span>
               </Link>
               <a
                 href="https://pezeshkekhoob.com/doctor/51213-asal-khadem"
                 target="_blank"
-                className="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-6 py-4 leading-6 rounded border-indigo-700 bg-indigo-700 text-white hover:text-white hover:bg-indigo-800 hover:border-indigo-800 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-700 active:border-indigo-700"
+                className="inline-flex items-center justify-center space-x-2 rounded border border-indigo-700 bg-indigo-700 px-6 py-4 font-semibold leading-6 text-white hover:border-indigo-800 hover:bg-indigo-800 hover:text-white focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-50 active:border-indigo-700 active:bg-indigo-700"
                 rel="noopener noreferrer"
               >
                 <span className={"px-2"}>دریافت نوبت</span>
@@ -41,7 +41,7 @@ export const DarkHero = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6 animate-pulse"
+                  className="h-6 w-6 animate-pulse"
                 >
                   <path
                     strokeLinecap="round"
@@ -53,18 +53,18 @@ export const DarkHero = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 lg:ml-16 lg:flex lg:justify-center lg:items-center">
-          <div className="lg:w-96 mx-5 relative">
-            <div className="absolute pattern-dots-xl top-0 left-0 w-32 h-48 md:h-96 transform -translate-y-12 -translate-x-16 -rotate-3 scale-[800%] opacity-20 saturate-150 duration-500 filter blur-xl text-green-500 z-0 "></div>
-            <div className="absolute pattern-dots-xl text-indigo-800 top-0 left-0 w-32 h-48 md:h-96 transform -translate-y-12 -translate-x-16 -rotate-3"></div>
-            <div className="absolute pattern-dots-xl text-indigo-800 bottom-0 right-0 w-32 h-48 md:h-96 transform translate-y-12 translate-x-16 rotate-3"></div>
-            <div className="absolute inset-0 rounded-xl bg-gray-600 bg-opacity-20 -m-4 transform rotate-2 hover:rotate-3 transition-all duration-1000 hover:scale-110"></div>
-            <div className="absolute inset-0 rounded-xl bg-gray-600 bg-opacity-25 -m-4 transform -rotate-2 hover:-rotate-3 transition-all duration-1000 hover:scale-105"></div>
+        <div className="lg:ml-16 lg:flex lg:w-1/2 lg:items-center lg:justify-center">
+          <div className="relative mx-5 lg:w-96">
+            <div className="absolute left-0 top-0 z-0 h-48 w-32 -translate-x-16 -translate-y-12 -rotate-3 scale-[800%] transform text-green-500 opacity-20 blur-xl saturate-150 filter duration-500 pattern-dots-xl md:h-96 "></div>
+            <div className="absolute left-0 top-0 h-48 w-32 -translate-x-16 -translate-y-12 -rotate-3 transform text-indigo-800 pattern-dots-xl md:h-96"></div>
+            <div className="absolute bottom-0 right-0 h-48 w-32 translate-x-16 translate-y-12 rotate-3 transform text-indigo-800 pattern-dots-xl md:h-96"></div>
+            <div className="absolute inset-0 -m-4 rotate-2 transform rounded-xl bg-gray-600 bg-opacity-20 transition-all duration-1000 hover:rotate-3 hover:scale-110"></div>
+            <div className="absolute inset-0 -m-4 -rotate-2 transform rounded-xl bg-gray-600 bg-opacity-25 transition-all duration-1000 hover:-rotate-3 hover:scale-105"></div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="1.png"
               alt="Doctor Asal Khadem"
-              className="relative rounded-lg mx-auto shadow-lg transition-all duration-300 cursor-pointer filter grayscale-[40%] hover:grayscale-[25%] hover:scale-[102%] active:scale-95"
+              className="relative mx-auto cursor-pointer rounded-lg shadow-lg grayscale-[40%] filter transition-all duration-300 hover:scale-[102%] hover:grayscale-[25%] active:scale-95"
             />
           </div>
         </div>

@@ -23,7 +23,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body
-        className={`${vazirMatn.className} flex flex-col mx-auto w-full min-h-screen bg-gray-900`}
+        className={`${vazirMatn.className} mx-auto flex min-h-screen w-full flex-col bg-gray-900`}
       >
         <DarkNavbar />
         {children}

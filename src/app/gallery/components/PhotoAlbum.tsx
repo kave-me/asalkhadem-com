@@ -7,7 +7,7 @@ interface photo {
 
 export const PhotoAlbum = ({ photos }: { photos: photo[] }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-12  bg-indigo-50 p-4">
+    <div className="grid grid-cols-1 gap-12 bg-indigo-50  p-4 md:grid-cols-3">
       {photos.map((photo) => (
         <Image
           src={photo.src}
@@ -15,7 +15,7 @@ export const PhotoAlbum = ({ photos }: { photos: photo[] }) => {
           key={photo.src}
           width={500}
           height={500}
-          className=" h-auto max-w-full rounded shadow-xl border-indigo-200 border-2 border-dashed mx-auto border-opacity-30 "
+          className=" mx-auto h-auto max-w-full rounded border-2 border-dashed border-indigo-200 border-opacity-30 shadow-xl "
         />
       ))}
     </div>

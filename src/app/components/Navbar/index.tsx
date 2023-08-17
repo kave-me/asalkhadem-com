@@ -4,18 +4,18 @@ export function Navbar() {
       id="page-header"
       className="flex flex-none items-center bg-white py-10"
     >
-      <div className="flex flex-col text-center md:flex-row md:items-center md:justify-between space-y-6 md:space-y-0 container xl:max-w-7xl mx-auto px-4 lg:px-8">
+      <div className="container mx-auto flex flex-col space-y-6 px-4 text-center md:flex-row md:items-center md:justify-between md:space-y-0 lg:px-8 xl:max-w-7xl">
         <div>
           <a
             href="javascript:void(0)"
-            className="inline-flex items-center space-x-2 font-bold text-lg tracking-wide text-indigo-600 hover:text-indigo-400"
+            className="inline-flex items-center space-x-2 text-lg font-bold tracking-wide text-indigo-600 hover:text-indigo-400"
           >
             <svg
               stroke="currentColor"
               fill="none"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
-              className="opacity-75 hi-outline hi-cube-transparent inline-block w-6 h-6"
+              className="hi-outline hi-cube-transparent inline-block h-6 w-6 opacity-75"
             >
               <path
                 strokeLinecap="round"
@@ -27,7 +27,7 @@ export function Navbar() {
             <span>Company</span>
           </a>
         </div>
-        <div className="flex flex-col text-center md:flex-row md:items-center md:justify-between space-y-6 md:space-y-0 md:space-x-10">
+        <div className="flex flex-col space-y-6 text-center md:flex-row md:items-center md:justify-between md:space-x-10 md:space-y-0">
           <nav className="space-x-4 md:space-x-6">
             <a
               href="javascript:void(0)"
@@ -51,14 +51,14 @@ export function Navbar() {
           <div className="flex items-center justify-center space-x-2">
             <a
               href="javascript:void(0)"
-              className="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-3 py-2 leading-6 rounded border-gray-300 bg-white text-gray-800 shadow-sm hover:text-gray-800 hover:bg-gray-100 hover:border-gray-300 hover:shadow focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:bg-white active:border-white active:shadow-none"
+              className="inline-flex items-center justify-center space-x-2 rounded border border-gray-300 bg-white px-3 py-2 font-semibold leading-6 text-gray-800 shadow-sm hover:border-gray-300 hover:bg-gray-100 hover:text-gray-800 hover:shadow focus:outline-none focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:border-white active:bg-white active:shadow-none"
             >
               <span>Sign In</span>
               <svg
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
-                className="opacity-50 hi-solid hi-arrow-right inline-block w-5 h-5"
+                className="hi-solid hi-arrow-right inline-block h-5 w-5 opacity-50"
               >
                 <path
                   fillRule="evenodd"

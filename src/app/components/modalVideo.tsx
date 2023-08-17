@@ -21,7 +21,7 @@ export function ModalVideo({
       {/* Video thumbnail */}
       <div>
         <div
-          className="relative flex justify-center mb-8"
+          className="relative mb-8 flex justify-center"
           data-aos="zoom-y-out"
           data-aos-delay="450"
         >
@@ -58,13 +58,13 @@ export function ModalVideo({
           {/*	</svg>*/}
           {/*</div>*/}
           <button
-            className="absolute top-full flex items-center transform -translate-y-20 bg-indigo-500 rounded-full font-medium group p-4 shadow-lg text-indigo-100"
+            className="group absolute top-full flex -translate-y-20 transform items-center rounded-full bg-indigo-500 p-4 font-medium text-indigo-100 shadow-lg"
             onClick={() => {
               setModalOpen(true);
             }}
           >
             <svg
-              className="w-6 h-6 fill-current text-indigo-50 group-hover:text-blue-600 shrink-0"
+              className="h-6 w-6 shrink-0 fill-current text-indigo-50 group-hover:text-blue-600"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -98,7 +98,7 @@ export function ModalVideo({
 
           {/* Modal dialog */}
           <Transition.Child
-            className="fixed inset-0 z-[99999] overflow-hidden flex items-center justify-center transform px-4 sm:px-6"
+            className="fixed inset-0 z-[99999] flex transform items-center justify-center overflow-hidden px-4 sm:px-6"
             enter="transition ease-out duration-200"
             enterFrom="opacity-0 scale-95"
             enterTo="opacity-100 scale-100"
@@ -106,8 +106,8 @@ export function ModalVideo({
             leaveFrom="oopacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <div className="max-w-6xl mx-auto h-full flex items-center">
-              <Dialog.Panel className="w-full max-h-full aspect-video bg-black overflow-hidden">
+            <div className="mx-auto flex h-full max-w-6xl items-center">
+              <Dialog.Panel className="aspect-video max-h-full w-full overflow-hidden bg-black">
                 <video
                   ref={videoRef}
                   width={videoWidth}

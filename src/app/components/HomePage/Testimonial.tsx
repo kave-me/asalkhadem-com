@@ -22,14 +22,14 @@ export const TestimonialSection = () => {
       {!open ? <Testimonial show={4} /> : <Testimonial show={10} />}
       <button
         className={
-          "text-center text-green-50 mx-auto flex flex-col items-center  bg-gradient-to-tr from-green-400 to-green-500 rounded-md -mt-6 mb-4 p-2 w-12 h-12 shadow-lg transition-all duration-500 ease-in-out hover:shadow-xl hover:scale-110 transform "
+          "mx-auto -mt-6 mb-4 flex h-12 w-12  transform flex-col items-center rounded-md bg-gradient-to-tr from-green-400 to-green-500 p-2 text-center text-green-50 shadow-lg transition-all duration-500 ease-in-out hover:scale-110 hover:shadow-xl "
         }
         onClick={() => setOpen((prevState) => !prevState)}
       >
         {open ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 inline-block text-gray-300"
+            className="inline-block h-6 w-6 text-gray-300"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -44,7 +44,7 @@ export const TestimonialSection = () => {
         ) : (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 inline-block animate-bounce "
+            className="inline-block h-6 w-6 animate-bounce "
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

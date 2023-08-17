@@ -6,11 +6,11 @@ export function SimpleCard({
   return (
     <div>
       <p className="leading-relaxed text-gray-700">
-        <span className="text-gray-600 leading-tight tracking-tight text-base ">
+        <span className="text-base leading-tight tracking-tight text-gray-600 ">
           «{description}»
         </span>
       </p>
-      <p className="leading-tight tracking-tight text-xs text-gray-500 pt-1">
+      <p className="pt-1 text-xs leading-tight tracking-tight text-gray-500">
         {" "}
         ~ {credit}
       </p>

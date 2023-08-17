@@ -23,16 +23,16 @@ const faqData = [
 export function FaqSection() {
   return (
     <div className="bg-white">
-      <div className="lg:flex  space-y-16 lg:justify-between lg:space-x-8 lg:space-y-0 container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
+      <div className="container  mx-auto space-y-16 px-4 py-16 lg:flex lg:justify-between lg:space-x-8 lg:space-y-0 lg:px-8 lg:py-32 xl:max-w-7xl">
         <div className="text-center lg:text-right">
           {/*<div className="text-sm uppercase font-bold tracking-wider mb-2 text-indigo-700">*/}
           {/*	سوالات متداول*/}
           {/*</div>*/}
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
+          <h2 className="mb-4 text-3xl font-extrabold md:text-4xl">
             <span className="text-indigo-600">سوالات </span>
             متداول
           </h2>
-          <h3 className="text-lg md:text-base md:leading-relaxed text-gray-600 pl-4">
+          <h3 className="pl-4 text-lg text-gray-600 md:text-base md:leading-relaxed">
             شما هم این سوال‌ها رو دارید؟ 🤔
           </h3>
         </div>

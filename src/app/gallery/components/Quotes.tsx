@@ -2,7 +2,7 @@ export function Quotes(props: {
   callbackfn: (item: any, index: number) => any;
 }) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-16 ">
+    <div className="grid grid-cols-1 gap-16 md:grid-cols-3 ">
       {[
         {
           title: "ابراز علاقه",

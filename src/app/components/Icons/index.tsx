@@ -6,7 +6,7 @@ export function HeartIcon() {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-6 h-6 text-red-400 animate-pulse ease-in-out hover:text-red-600 transition-colors duration-500 hover:scale-110 active:scale-95 saturate-150"
+      className="h-6 w-6 animate-pulse text-red-400 saturate-150 transition-colors duration-500 ease-in-out hover:scale-110 hover:text-red-600 active:scale-95"
     >
       <path
         strokeLinecap="round"
@@ -25,7 +25,7 @@ export function ChevronRight() {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-6 h-6"
+      className="h-6 w-6"
     >
       <path
         strokeLinecap="round"
@@ -44,7 +44,7 @@ export function ChevronLeft() {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-6 h-6"
+      className="h-6 w-6"
     >
       <path
         strokeLinecap="round"
