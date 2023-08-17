@@ -28,7 +28,6 @@ export default function QuoteAndGallery() {
             callbackfn={(item, index) => (
               <SimpleCard
                 key={index}
-                title={item.title}
                 description={item.description}
                 credit={item.credit}
               />
