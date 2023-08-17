@@ -5,7 +5,7 @@ import { VideoBox } from "components/Video/VideoBox";
 
 export function DontNeedSection() {
   return (
-    <section>
+    <section className="my-20 overflow-hidden">
       {/* CTA box */}
       <div className="relative mx-auto overflow-hidden rounded bg-gray-900  px-8 py-10  md:px-12 md:pb-8 md:pt-16 ">
         {/* Background illustration */}
@@ -44,7 +44,7 @@ export function DontNeedSection() {
               ].map((item, index) => (
                 <li
                   key={index}
-                  className="inline-block rounded p-1 text-xs text-blue-300 ring-1 ring-blue-300 hover:text-blue-400 hover:underline active:text-blue-600"
+                  className="inline-block cursor-pointer rounded border border-blue-400 p-1 text-xs text-blue-300 hover:border-blue-500 hover:text-blue-500 hover:underline active:text-blue-600"
                 >
                   <a
                     href={`https://www.instagram.com/explore/tags/${item}`}
@@ -60,7 +60,7 @@ export function DontNeedSection() {
         </div>
 
         <div
-          className="pointer-events-none absolute bottom-0 right-0 hidden lg:block"
+          className="pointer-events-none absolute bottom-0 right-0 hidden scale-125 overflow-hidden lg:block"
           aria-hidden="true"
         >
           <svg width="428" height="328" xmlns="http://www.w3.org/2000/svg">
@@ -137,7 +137,13 @@ export function DontNeedSection() {
                   ry="5.841"
                 />
               </g>
-              <circle fill="url(#ni-a)" cx="276" cy="237" r="200" />
+              <circle
+                fill="url(#ni-a)"
+                cx="276"
+                cy="237"
+                r="200"
+                className="scale-105"
+              />
             </g>
           </svg>
         </div>

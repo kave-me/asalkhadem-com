@@ -10,7 +10,7 @@ interface TestimonialWrapperProps {
 
 const TestimonialWrapper = ({ children, keyID }: TestimonialWrapperProps) => {
   return (
-    <div className="bg-gray-50" key={keyID}>
+    <div className="my-20 bg-gray-100" key={keyID}>
       {children}
     </div>
   );

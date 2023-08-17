@@ -27,7 +27,10 @@ export default function Home() {
   // const [videoSrc, setVideoSrc] = React.useState<string>("");
   // const tmp = getData();
   return (
-    <main id="page-content" className="flex max-w-full flex-auto flex-col">
+    <main
+      id="page-content"
+      className="flex max-w-full flex-auto flex-col bg-gray-100 "
+    >
       <DarkHero />
       {/* Hero image */}
       <ModalVideo video={"videoSrc"} videoWidth={1920} videoHeight={1080} />

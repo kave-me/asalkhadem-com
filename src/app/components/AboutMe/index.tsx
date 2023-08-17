@@ -143,13 +143,13 @@ export function AboutMeSection() {
 
   return (
     <div className="bg-gray-100">
-      <div className="container mx-auto space-y-10 border-x-2 border-b-2 border-dashed border-indigo-200 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-50 via-indigo-100 to-gray-100 px-4 py-16 lg:px-8 lg:py-32 xl:max-w-7xl">
+      <div className="container mx-auto space-y-10  border-2 border-dashed border-indigo-200 bg-gray-200 px-4 py-16 lg:px-8 lg:py-32 xl:max-w-7xl">
         <AboutMeTop heading={heading} subHead={subHead} />
-        <section className="grid grid-cols-1 gap-4 rounded-b-lg border-b-2 border-l-2 border-dashed border-indigo-500/10 bg-gradient-to-b from-gray-100 to-indigo-100/30 p-4  md:grid-cols-3 md:gap-8 ">
+        <div className="grid grid-cols-1 gap-4 rounded-b-lg border-b-2 border-l-2 border-dashed border-indigo-500/10 bg-gradient-to-b from-gray-100 to-indigo-100/30 p-4  md:grid-cols-3 md:gap-8 ">
           {cards.map((card) => (
             <Card key={card.title} {...card} />
           ))}
-        </section>
+        </div>
       </div>
     </div>
   );

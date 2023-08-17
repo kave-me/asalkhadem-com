@@ -13,7 +13,7 @@ function HeroDescription() {
 export const DarkHero = () => {
   const H1 = "عسل خادم";
   return (
-    <>
+    <div className={"bg-gray-100"}>
       <div className="container mx-auto flex flex-col space-y-16 overflow-hidden bg-gray-800 px-4 py-16 text-center lg:flex-row lg:space-y-0 lg:px-8 lg:py-32 lg:text-right xl:max-w-7xl ">
         <div className="relative z-10 lg:flex lg:w-1/2 lg:items-center ">
           <div>
@@ -69,6 +69,6 @@ export const DarkHero = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

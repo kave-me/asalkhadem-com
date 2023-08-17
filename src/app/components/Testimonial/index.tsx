@@ -104,7 +104,7 @@ export function Testimonial({ show = 4 }: TestimonialCardProps) {
   ];
 
   return (
-    <div className="via via border-t-2 border-dashed border-indigo-200 bg-[conic-gradient(at_right_center,_var(--tw-gradient-stops))] from-green-100 via-blue-50 to-indigo-100 ">
+    <div className="via via border-t-2 border-dashed border-indigo-200 bg-[conic-gradient(at_right_center,_var(--tw-gradient-stops))] from-green-100 via-white to-indigo-100 ">
       <div className="container mx-auto space-y-16 px-4 py-16 lg:px-8 lg:py-32 xl:max-w-7xl">
         <div className="text-center">
           <p className="mb-7  text-sm  font-bold text-blue-700 opacity-80 ">
