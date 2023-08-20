@@ -96,7 +96,7 @@ export function ContactMeSection() {
           />
         </div>
       </div>
-      <div className="relative  ">
+      <div className="relative">
         <div
           className="pointer-events-none absolute bottom-0 right-0 hidden scale-150 mix-blend-multiply filter lg:block"
           aria-hidden="true"

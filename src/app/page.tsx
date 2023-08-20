@@ -1,15 +1,7 @@
 "use client";
 import React from "react";
-import { AboutMeSection } from "components/AboutMe";
 import { DarkHero } from "components/Hero/DarkHero";
-import { EssenceAndExistenceSection } from "components/JoinCommunity";
-import { VideoIntroToExistentialism } from "components/OfferCTA/VideoIntroToExistentialism";
-import { TestimonialSection } from "components/HomePage/Testimonial";
-import { FaqSection } from "components/FAQ";
-import { HavingDoubt } from "components/OfferCTA/HavingDoubt";
-import { DontNeedSection } from "components/NewsLetter/dontNeedSection";
-import { ModalVideo } from "components/modalVideo";
-import { ContactMeSection } from "components/ContactMe/ContactMeSection";
+import { VideoModal } from "components/Hero/VideoModal";
 
 // async function getData() {
 //   const res = await fetch(
@@ -24,25 +16,24 @@ import { ContactMeSection } from "components/ContactMe/ContactMeSection";
 // }
 
 export default function Home() {
-  // const [videoSrc, setVideoSrc] = React.useState<string>("");
-  // const tmp = getData();
+  // className="flex max-w-full flex-auto flex-col bg-gray-100 "
   return (
     <main
       id="page-content"
-      className="flex max-w-full flex-auto flex-col bg-gray-100 "
+      className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900"
     >
       <DarkHero />
       {/* Hero image */}
-      <ModalVideo video={"videoSrc"} videoWidth={1920} videoHeight={1080} />
-      <AboutMeSection />
-      <TestimonialSection />
-      <ContactMeSection />
-      <FaqSection />
-      <HavingDoubt />
-      <VideoIntroToExistentialism />
+      <VideoModal video={"videoSrc"} videoWidth={1920} videoHeight={1080} />
+      {/*  <AboutMeSection />*/}
+      {/*<TestimonialSection />*/}
+      {/*<ContactMeSection />*/}
+      {/*<FaqSection />*/}
+      {/*<HavingDoubt />*/}
+      {/*<VideoIntroToExistentialism />*/}
       {/*<PsychologyTest/>*/}
-      <DontNeedSection />
-      <EssenceAndExistenceSection />
+      {/*<DontNeedSection />*/}
+      {/*<EssenceAndExistenceSection />*/}
       {/*<ContactMeSection />*/}
     </main>
   );
