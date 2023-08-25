@@ -1,3 +1,4 @@
+"use client";
 import { Tab } from "@headlessui/react";
 import Image from "next/image";
 import { portfolio } from "components/AboutMe/data";

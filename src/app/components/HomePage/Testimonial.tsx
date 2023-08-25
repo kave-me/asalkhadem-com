@@ -7,7 +7,7 @@ export function TestimonialSection() {
   const [open, setOpen] = useState(false);
   return (
     <TestimonialWrapper keyID="testimonial-wrapper">
-      <Testimonial show={open ? 10 : 4} />
+      <Testimonial show={open ? 10 : 6} />
 
       <TestimonialButton
         onClick={() => setOpen((prevState) => !prevState)}
