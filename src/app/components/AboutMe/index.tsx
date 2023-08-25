@@ -2,7 +2,6 @@
 import { Tab } from "@headlessui/react";
 import Image from "next/image";
 import { portfolio } from "components/AboutMe/data";
-import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { TabButton } from "components/AboutMe/TabButton";
 
 export function LegacyAboutMeSection() {
