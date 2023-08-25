@@ -1,15 +1,28 @@
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { useEffect } from "react";
+import { classNames } from "components/AboutMe/classNames";
 
-function TestimonialCard({ quote, name, context: time }: any) {
+interface ITestimonialCard {
+  quote: string;
+  name: string;
+  time: string;
+  blur?: boolean;
+}
+
+function TestimonialCard({
+  blur = false,
+  name,
+  quote,
+  time,
+}: ITestimonialCard) {
   return (
-    <div className="relative rounded bg-white px-6 pb-6 pt-14 shadow-sm md:px-8 md:pb-6">
+    <div className="relative rounded bg-white px-6 pb-6 pt-14 shadow md:px-8 md:pb-6">
       <div className="absolute right-0 top-0 mr-5 mt-2 font-serif text-8xl text-gray-200 opacity-75">
         “
       </div>
       <div className="relative h-full">
         <blockquote className="flex h-full flex-col items-start justify-between ">
-          <p className=" mb-4 line-clamp-none text-[13px] font-medium leading-8 text-gray-700 drop-shadow-sm">
+          <p className=" mb-4 line-clamp-none text-[14px] font-medium leading-8 text-gray-700 drop-shadow-sm">
             {quote}
           </p>
           <footer className="flex items-center gap-4 md:-mb-1 md:-mr-2.5 ">
@@ -51,58 +64,58 @@ export function Testimonial({ show = 4 }: TestimonialCardProps) {
     {
       quote: `من چهار سال است که به بیماری اسکیزوفرنی مبتلا هستم و تقریبا هشت ماه است که به ایشان مراجعه میکنم و در این مدت با تکنیک های مدیتیشن و در لحظه بودن من را از هذیان ها و اضطراب های ذهنم دور کردند.`,
       name: "مهدی",
-      context: "1401/12/22",
+      time: "1401/12/22",
     },
     {
       quote: `بسیار دلسوز و پیگیر هستن که من با اینکه توو کرج تا الان به چند روانشناس مراجعه کرده بودم، مثلِ ایشون ندیدم... با صحبتها و روش درمانیشون آرامش و حالِ خوب به آدم میدن. من که خیلی دوسشون دارم و سعی میکنم حداقل هفته ای یک جلسه حتما باهاشون بگیرم. شدیدا پیشنهادشون میکنم.`,
       name: "ناشناس",
-      context: "1401/12/22",
+      time: "1401/12/22",
     },
     {
       quote: "مورد اعتماد و حرفه ایی.",
       name: "مهدی",
-      context: "1401/12/22",
+      time: "1401/12/22",
     },
     {
       quote: `با دانش، دلسوز، حرفه ای هستن خیلیی خوب و درست با مراجع ارتباط میگیرن صداقت دارن و از تکنیکا و متدای مختلف به خوبی استفاده میکنن.`,
       name: "مهرداد",
-      context: "1401/12/22",
+      time: "1401/12/22",
     },
     {
       quote: `خیلی با حوصله و دلسوزن خوشحالم که با ایشون آشنا شدم بهترینن❤️`,
       name: "سوگول",
-      context: "1401/12/22",
+      time: "1401/12/22",
     },
 
     {
       quote:
         "عملکرد ایشون رو دوست دارم ،من در طول جلسه احساس آرامش دارم و احساس فشار یا اذیت شدن ندارم و میتونم در زمان مناسب حرف هامو بیان کنم. ",
       name: "مهرانا",
-      context: "1402/05/13",
+      time: "1402/05/13",
     },
     {
       quote:
         "من برای اضطراب شدید داشتم مراجعه کردم و با صحبت و راهکارهایی که دادن الان خیلی بهتر شدم بسیار خوش اخلاق، شنونده خوب و با حوصله راهکارهای خیلی خوب و کاربردی رو ارائه میدن. ",
       name: "ناشناس",
-      context: "1401/05/12",
+      time: "1401/05/12",
     },
     {
       quote:
         "خانم دکتر بسیار دلسوز و حاذق هستند در طول جلسه تمامیت ایشون برای مراجع کاملا قابل لمسه منفعل و تنها شنونده نیستند نظرات متخصصانه ی ایشون من را به خودم خیلی آگاه کرد و با همراهی و پیگیری های ایشون تونستم از پس مشکلاتم بگذرم پر از حس امنیت ، آرامش، اعتماد بودند سپاسگذارم.",
       name: "منصوره",
-      context: "1402/05/12",
+      time: "1402/05/12",
     },
     {
       quote:
         "من بعد از کلی پرس و جو و خواندن رزومه بیش از 10 نفر دکتر روانشناس و همچنین بعد از دو جلسه با دو دکتر مختلف، ایشان رو انتخاب کردم، دلیل اول ایشون در کارشون حرفه ای هستن، دوم اینکه دقت بالایی دارند و در طول جلسه تمام حواسشون به من هست ( به دلیل راه دور من با ایشان انلاین و تصویری صحبت می کنم) و اینکه ایشان فقط شنونده نیستن و در آخر بی نهایت دوست داشتنی هستن و من ایشان رو پی شنهاد می کنم.... ",
       name: "ماریانا",
-      context: "1401/11/08",
+      time: "1401/11/08",
     },
     {
       quote:
         "از نظر شروع جلسه و ارتباط برقرار شدن و ایجاد حس امنیت و راحتی که خیلییی مهمه بسیار عالییی بودند از همون جلسه اول بسیار راضی و تاثیرات بسیار خوب توی تجربه روان درمانگری که حین ۲سال داشتم ایشون بهترین روان درمانگری بودن که شناختم و خوشحالم ازین بابت تشکر از تراپیست عزیزم ",
       name: "ناشناس",
-      context: "1402/05/16",
+      time: "1402/05/16",
     },
   ];
   const [parent, enableAnimations] = useAutoAnimate({
@@ -130,7 +143,20 @@ export function Testimonial({ show = 4 }: TestimonialCardProps) {
         >
           {data.map((item, index) => {
             if (index < show) {
-              return <TestimonialCard key={item.quote} {...item} />;
+              return (
+                <TestimonialCard
+                  key={item.quote}
+                  time={item.time}
+                  quote={item.quote}
+                  name={item.name}
+                  blur={(() => {
+                    if (index + 1 > show - 2) {
+                      return true;
+                    }
+                    return false;
+                  })()}
+                />
+              );
             }
           })}
         </div>
