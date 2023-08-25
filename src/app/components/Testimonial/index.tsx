@@ -15,7 +15,7 @@ export function Testimonial({ show = 4 }: TestimonialCardProps) {
   });
   useEffect(() => {
     enableAnimations(true);
-  }, []);
+  }, [enableAnimations]);
   return (
     <div className="relative min-h-max border-t-2 border-dashed border-indigo-200 bg-[conic-gradient(at_right_center,_var(--tw-gradient-stops))] from-green-100 via-white to-indigo-100 ">
       <div className="container mx-auto space-y-16 px-4 py-16 lg:px-8 lg:pb-32 lg:pt-16 xl:max-w-7xl">
