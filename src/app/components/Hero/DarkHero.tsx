@@ -1,8 +1,9 @@
 import Link from "next/link";
+import { GRADIENT } from "utils/gradient";
 
 function HeroDescription() {
   return (
-    <h2 className="my-10 text-center text-lg font-medium text-indigo-200 md:text-xl md:leading-tight">
+    <h2 className="mb-24 mt-10 text-center text-lg font-medium text-indigo-200 md:text-2xl md:leading-tight">
       <span>دکترای تخصصی روانشناسی سلامت</span>
       <br />
       روانشناس و روان درمانگر
@@ -13,15 +14,15 @@ function HeroDescription() {
 export const DarkHero = () => {
   const H1 = "عسل خادم";
   return (
-    <div className={"bg-gray-100"}>
-      <div className="container mx-auto flex flex-col space-y-16 overflow-hidden bg-gray-800 px-4 py-16 text-center lg:flex-row lg:space-y-0 lg:px-8 lg:py-32 lg:text-right xl:max-w-7xl ">
-        <div className="relative z-10 lg:flex lg:w-1/2 lg:items-center ">
+    <div className={GRADIENT}>
+      <div className="container mx-auto flex min-h-screen  flex-col items-stretch justify-center overflow-hidden rounded-lg bg-gray-800 px-4 py-16 text-center  shadow-2xl shadow-indigo-600/10 lg:flex-row lg:px-8 lg:py-32 lg:text-right xl:max-w-7xl">
+        <div className="relative z-10 p-4 pb-20 md:min-h-max lg:flex lg:w-1/2 lg:items-center ">
           <div>
-            <h1 className="mb-16 font-sans  text-3xl font-black text-white md:text-6xl ">
+            <h1 className=" text-5xl font-black leading-tight tracking-tight text-gray-50  md:text-6xl ">
               دکتر <span className="text-indigo-300">{H1}</span>
             </h1>
             <HeroDescription />
-            <div className="flex flex-col justify-center space-y-2 pb-16 pt-10 text-lg sm:flex-row sm:items-center sm:gap-2 sm:space-y-0 lg:justify-start">
+            <div className="flex snap-always flex-col flex-wrap justify-center gap-5 pb-10 md:flex-row ">
               <Link
                 href="/about"
                 className="inline-flex items-center justify-center space-x-2 rounded border border-gray-700 bg-gray-700 px-6 py-4 font-semibold leading-6 text-white hover:border-gray-800 hover:bg-gray-800 hover:text-white focus:outline-none focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:border-gray-700 active:bg-gray-700"
@@ -53,18 +54,18 @@ export const DarkHero = () => {
             </div>
           </div>
         </div>
-        <div className="lg:ml-16 lg:flex lg:w-1/2 lg:items-center lg:justify-center">
+        <div className="lg:ml-16 lg:flex lg:w-1/2 lg:items-center lg:justify-center  ">
           <div className="relative mx-5 lg:w-96">
             <div className="absolute left-0 top-0 z-0 h-48 w-32 -translate-x-16 -translate-y-12 -rotate-3 scale-[800%] transform text-green-500 opacity-20 blur-xl saturate-150 filter duration-500 pattern-dots-xl md:h-96 "></div>
             <div className="absolute left-0 top-0 h-48 w-32 -translate-x-16 -translate-y-12 -rotate-3 transform text-indigo-800 pattern-dots-xl md:h-96"></div>
             <div className="absolute bottom-0 right-0 h-48 w-32 translate-x-16 translate-y-12 rotate-3 transform text-indigo-800 pattern-dots-xl md:h-96"></div>
             <div className="absolute inset-0 -m-4 rotate-2 transform rounded-xl bg-gray-600 bg-opacity-20 transition-all duration-1000 hover:rotate-3 hover:scale-110"></div>
-            <div className="absolute inset-0 -m-4 -rotate-2 transform rounded-xl bg-gray-600 bg-opacity-25 transition-all duration-1000 hover:-rotate-3 hover:scale-105"></div>
+            <div className="absolute inset-0 -m-4 -rotate-2 transform rounded-xl bg-gray-600 bg-opacity-25 mix-blend-saturation blur-sm filter transition-all duration-1000 hover:-rotate-3 hover:scale-105"></div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="1.png"
               alt="Doctor Asal Khadem"
-              className="relative mx-auto cursor-pointer rounded-lg shadow-lg grayscale-[40%] filter transition-all duration-300 hover:scale-[102%] hover:grayscale-[25%] active:scale-95"
+              className="relative mx-auto cursor-pointer snap-center rounded-lg shadow-lg grayscale-[40%] filter transition-all duration-300 hover:scale-[102%] hover:grayscale-[25%] active:scale-95"
             />
           </div>
         </div>

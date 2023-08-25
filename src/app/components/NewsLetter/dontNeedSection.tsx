@@ -11,10 +11,8 @@ export function DontNeedSection() {
         {/* Background illustration */}
         <div className="relative mx-auto flex flex-col items-center justify-between  lg:flex-row ">
           <div className="mx-auto rounded border-2 border-dashed border-red-500 bg-red-400/10 p-4 text-center shadow lg:max-w-xl lg:text-right">
-            <h5 className=" mx-auto mb-6 inline-flex flex-col items-center justify-center text-center text-5xl  ">
-              <FaTriangleExclamation className="inline-flex animate-ping text-red-500" />
-              <FaTriangleExclamation className="-mt-[100%] inline-flex  text-red-600 transition-transform" />
-            </h5>
+            <FaTriangleExclamation className="mx-auto mb-4 block text-5xl text-red-500" />
+
             {/* CTA content */}
             <h3 className="text-center text-2xl font-black text-red-400">
               من به روانشناس نیازی ندارم!

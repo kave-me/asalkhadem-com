@@ -1,4 +1,4 @@
-import { AboutMeSection } from "components/AboutMe";
+import { LegacyAboutMeSection } from "components/AboutMe";
 
 export default function About() {
   return (
@@ -23,7 +23,7 @@ export default function About() {
             پیچیده و آشفته زندگی، به خوبی سازگار بشید.
           </p>
         </div>
-        <AboutMeSection />
+        <LegacyAboutMeSection />
       </div>
     </main>
   );

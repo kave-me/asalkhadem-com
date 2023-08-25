@@ -50,6 +50,7 @@ module.exports = {
     require("@tailwindcss/aspect-ratio"),
     require("@tailwindcss/forms"),
     require("@tailwindcss/typography"),
+    require("@headlessui/tailwindcss"),
     plugin(function ({ addUtilities }) {
       const utilBgPatterns = {
         ".pattern-dots-sm": {

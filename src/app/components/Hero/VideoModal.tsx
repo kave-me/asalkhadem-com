@@ -1,7 +1,8 @@
 import { ModalVideoProps } from "components/Video/modalVideoProps";
 import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { FaPlayCircle } from "react-icons/fa";
+import { PlayButton } from "components/Hero/PlayButton";
+import { GRADIENT } from "utils/gradient";
 
 export function VideoModal({
   video,
@@ -12,26 +13,8 @@ export function VideoModal({
   const videoRef = useRef<HTMLVideoElement>(null);
 
   return (
-    <div>
-      {/* Video thumbnail */}
-      <div>
-        <div
-          className="relative mb-8 flex justify-center"
-          data-aos="zoom-y-out"
-          data-aos-delay="450"
-        >
-          <button
-            className="group absolute top-full flex -translate-y-20 items-center rounded-full bg-indigo-500 p-4 font-medium text-indigo-100 shadow-lg"
-            onClick={() => {
-              setModalOpen(true);
-            }}
-          >
-            <FaPlayCircle className="h-8 w-8 fill-current text-indigo-50 group-hover:text-blue-600" />
-            <span className="mr-3">ویدیو معرفی (دو دقیقه)</span>
-          </button>
-        </div>
-      </div>
-
+    <article className={"relative py-10" + GRADIENT}>
+      <PlayButton onClick={() => setModalOpen(true)} />
       <Transition
         show={modalOpen}
         as={Fragment}
@@ -74,6 +57,6 @@ export function VideoModal({
           </Transition.Child>
         </Dialog>
       </Transition>
-    </div>
+    </article>
   );
 }

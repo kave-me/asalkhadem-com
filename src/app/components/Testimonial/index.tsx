@@ -1,3 +1,6 @@
+import { useAutoAnimate } from "@formkit/auto-animate/react";
+import { useEffect } from "react";
+
 function TestimonialCard({ quote, name, context: time }: any) {
   return (
     <div className="relative rounded bg-white px-6 pb-6 pt-14 shadow-sm md:px-8 md:pb-6">
@@ -102,10 +105,16 @@ export function Testimonial({ show = 4 }: TestimonialCardProps) {
       context: "1402/05/16",
     },
   ];
-
+  const [parent, enableAnimations] = useAutoAnimate({
+    duration: 300,
+    easing: "ease-in",
+  });
+  useEffect(() => {
+    enableAnimations(true);
+  }, []);
   return (
-    <div className="via via border-t-2 border-dashed border-indigo-200 bg-[conic-gradient(at_right_center,_var(--tw-gradient-stops))] from-green-100 via-white to-indigo-100 ">
-      <div className="container mx-auto space-y-16 px-4 py-16 lg:px-8 lg:py-32 xl:max-w-7xl">
+    <div className=" border-t-2 border-dashed border-indigo-200 bg-[conic-gradient(at_right_center,_var(--tw-gradient-stops))] from-green-100 via-white to-indigo-100 ">
+      <div className="container mx-auto space-y-16 px-4 py-16 lg:px-8 lg:pb-32 lg:pt-16 xl:max-w-7xl">
         <div className="text-center">
           <p className="mb-7  text-sm  font-bold text-blue-700 opacity-80 ">
             نظرات مراجعین
@@ -115,10 +124,13 @@ export function Testimonial({ show = 4 }: TestimonialCardProps) {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
+        <div
+          className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8"
+          ref={parent}
+        >
           {data.map((item, index) => {
             if (index < show) {
-              return <TestimonialCard key={index} {...item} />;
+              return <TestimonialCard key={item.quote} {...item} />;
             }
           })}
         </div>

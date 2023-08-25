@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { DarkHero } from "components/Hero/DarkHero";
-import { VideoModal } from "components/Hero/VideoModal";
+import { Hero } from "components/Hero";
+import { LegacyAboutMeSection } from "components/AboutMe";
 
 // async function getData() {
 //   const res = await fetch(
@@ -14,24 +14,39 @@ import { VideoModal } from "components/Hero/VideoModal";
 //     throw new Error("Failed to fetch data");
 //   });
 // }
+import { useAutoAnimate } from "@formkit/auto-animate/react";
+import { TestimonialSection } from "components/HomePage/Testimonial";
+import { ContactMeSection } from "components/ContactMe/ContactMeSection";
+import { FaqSection } from "components/FAQ";
+import { HavingDoubt } from "components/OfferCTA/HavingDoubt";
+import { VideoIntroToExistentialism } from "components/OfferCTA/VideoIntroToExistentialism";
+import { DontNeedSection } from "components/NewsLetter/dontNeedSection";
+import { EssenceAndExistenceSection } from "components/JoinCommunity";
+import { LandingCta } from "components/CTA";
+import { DraftAboutMeSection } from "components/Testimonial/DraftAboutMe";
 
 export default function Home() {
   // className="flex max-w-full flex-auto flex-col bg-gray-100 "
+  const [parent, enableAnimations] = useAutoAnimate();
+  React.useEffect(() => {
+    enableAnimations(true);
+  }, []);
   return (
     <main
-      id="page-content"
-      className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900"
+      ref={parent}
+      id="main-section"
+      className="min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 "
     >
-      <DarkHero />
-      {/* Hero image */}
-      <VideoModal video={"videoSrc"} videoWidth={1920} videoHeight={1080} />
-      {/*  <AboutMeSection />*/}
-      {/*<TestimonialSection />*/}
+      <Hero />
+      {/*<LegacyAboutMeSection />*/}
+      <LandingCta />
+      <TestimonialSection />
+      <DraftAboutMeSection />
       {/*<ContactMeSection />*/}
       {/*<FaqSection />*/}
       {/*<HavingDoubt />*/}
       {/*<VideoIntroToExistentialism />*/}
-      {/*<PsychologyTest/>*/}
+      {/*<PsychologyTest />*/}
       {/*<DontNeedSection />*/}
       {/*<EssenceAndExistenceSection />*/}
       {/*<ContactMeSection />*/}

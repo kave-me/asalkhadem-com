@@ -1,9 +1,10 @@
 import "./globals.css";
 import { Footer } from "components/Footer";
-import { DarkNavbar } from "components/Navbar/DarkNavbar";
+import { Index } from "components/Navbar";
 import { Vazirmatn } from "next/font/google";
 import Head from "next/head";
 import React from "react";
+import favicon from "../../public/favicon.ico";
 
 const vazirMatn = Vazirmatn({ subsets: ["arabic", "latin", "latin-ext"] });
 
@@ -20,12 +21,12 @@ export default function RootLayout({
   return (
     <html lang="fa" dir={"rtl"}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={favicon.src} />
       </Head>
       <body
         className={`${vazirMatn.className} mx-auto flex min-h-screen w-full flex-col bg-gray-900`}
       >
-        <DarkNavbar />
+        <Index />
         {children}
         <Footer />
       </body>

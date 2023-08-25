@@ -16,7 +16,7 @@ export function Breadcrumb() {
               خانه
             </Link>
           </li>
-          <FaAngleLeft className="mx-2 h-5 w-5 text-gray-300 " />
+          <FaAngleLeft className="mx-2 h-4 w-4 text-gray-300 " />
           <li>
             <span className="cursor-pointer select-none text-gray-300 hover:text-gray-200">
               {CurrentNavItem?.description}
