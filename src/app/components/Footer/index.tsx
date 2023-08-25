@@ -44,11 +44,11 @@ export const Footer = () => (
         © <span className="font-medium">تمام حقوق مادی و معنوی محفوظ است</span>
       </div>
     </div>
-    <h4 className="group flex justify-center  pb-8 text-center text-xs font-light text-gray-400 opacity-40 hover:opacity-70   ">
+    <h4 className="group flex justify-center  pb-8 text-center text-xs text-gray-400 opacity-40  filter hover:opacity-100   ">
       <a
         href={"https://kave.me"}
         target="_blank"
-        className="rounded border-2 border-transparent px-4 py-2 leading-none drop-shadow transition-all group-hover:scale-105 group-hover:border-gray-400/30 group-hover:bg-sky-200/30 group-hover:text-gray-700 group-hover:shadow "
+        className="rounded border-2 border-transparent px-4 py-2 leading-none drop-shadow transition-all group-hover:scale-105 group-hover:text-gray-700 "
       >
         Developed By
         <span
