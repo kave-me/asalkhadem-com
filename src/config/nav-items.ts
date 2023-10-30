@@ -34,7 +34,7 @@ export const NAVITEMS: iNavitem[] = [
   },
 ];
 const x = except(NAVITEMS);
-export const HEADER_NAV_ITEMS = x(["gallery", "about", "contact"]);
+export const HEADER_NAV_ITEMS = x(["gallery", "contact"]);
 export const FOOTER_NAV_ITEMS = x([
   "gallery",
   "group-therapy",
