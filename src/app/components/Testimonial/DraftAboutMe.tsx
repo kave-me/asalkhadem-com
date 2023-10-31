@@ -5,7 +5,7 @@ export function DraftAboutMeSection() {
     <section
       id="schedule"
       aria-label="Schedule"
-      className="mt-32 h-[500px] min-h-[200px] bg-gray-900 "
+      className=" h-[500px] min-h-[200px] bg-gray-900 "
     >
       <div
         className={

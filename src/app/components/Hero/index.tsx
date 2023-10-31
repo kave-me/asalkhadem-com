@@ -7,7 +7,11 @@ export function Hero() {
   return (
     <>
       <DarkHero />l
-      <VideoModal video={"videoSrc"} videoWidth={1920} videoHeight={1080} />
+      <VideoModal
+        video={"video/720p.mp4"}
+        videoWidth={1080}
+        videoHeight={720}
+      />
     </>
   );
 }

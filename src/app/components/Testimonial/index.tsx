@@ -20,7 +20,7 @@ export function Testimonial({ show = 4 }: TestimonialCardProps) {
     <>
       <HeadTestimonial />
       <div
-        className="grid grid-cols-1 gap-4 overflow-hidden md:grid-cols-2 md:gap-8"
+        className="grid grid-cols-1 gap-4 overflow-hidden  md:grid-cols-2 md:gap-8 "
         ref={parent}
       >
         {data.map((item, index) => {

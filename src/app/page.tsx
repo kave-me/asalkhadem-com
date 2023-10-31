@@ -30,9 +30,10 @@ export default function Home() {
       {/*<LegacyAboutMeSection />*/}
       <LandingCta />
       <TestimonialSection />
+      {/*<div className="space h-[500px] "></div>*/}
+      {/*<FaqSection />*/}
       <DraftAboutMeSection />
       {/*<ContactMeSection />*/}
-      {/*<FaqSection />*/}
       {/*<HavingDoubt />*/}
       {/*<VideoIntroToExistentialism />*/}
       {/*<PsychologyTest />*/}
