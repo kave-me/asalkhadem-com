@@ -31,7 +31,7 @@ export function Testimonial({ show = 4 }: TestimonialCardProps) {
                 time={item.time}
                 quote={item.quote}
                 name={item.name}
-                blur={index + 1 > show - 2}
+                blur={false}
               />
             );
           }
