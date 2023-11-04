@@ -8,7 +8,7 @@ export function PlayButton(props: { onClick: () => void }) {
     >
       <div className=" flex items-center justify-center transition-all duration-1000 ease-in-out group-hover:px-0">
         <FaPlayCircle className="h-8 w-8 text-indigo-50 transition-all " />
-        <span className=" px-4"> روان درمانی اگزیستانسیال چیست (دو دقیقه)</span>
+        <span className=" px-4"> روان درمانی اگزیستانسیال چیست (سه دقیقه)</span>
       </div>
     </button>
   );
