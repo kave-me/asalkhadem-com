@@ -46,7 +46,10 @@ Contributions are what make the open-source community such an amazing place to l
 ## License
 Distributed under the MIT License. See LICENSE for more information.
 
-Contact
-Developer: kave(dot)mdi(at)gmail(dot)com
-Project Link: https://github.com/kave-me/asalkhadem-com
-Production Website: https://asalkhadem.com
+## Contact
+
+- Developer: kave(dot)mdi(at)gmail(dot)com
+
+- Project Link: https://github.com/kave-me/asalkhadem-com
+
+- Production Website: https://asalkhadem.com
