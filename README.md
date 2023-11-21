@@ -1,34 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Asal Khadem's Professional Website
+
+Welcome to the GitHub repository for [Asal Khadem's professional website](https://asalkhadem.com)! This project is a modern, responsive web application designed to showcase the services and expertise of Asal Khadem, a renowned psychologist. It's built with a focus on user engagement, performance, and aesthetics.
+
+## Features
+
+- **Engaging User Interface:** Utilizes custom React components for a unique and interactive experience.
+- **Responsive Design:** Fully responsive layout, ensuring a seamless experience across various devices.
+- **SEO Optimized:** Enhanced for search engine visibility.
+- **Performance Focused:** Fast loading times with optimized code.
+
+## Technologies Used
+
+- **React.js:** For building the user interface.
+- **Next.js:** Server-side rendering for improved performance and SEO.
+- **Tailwind CSS:** For styling and responsive design.
+- **ESLint & Prettier:** Ensuring code quality and consistency.
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these simple steps:
 
-```bash
+1. Clone the repo
+   ```sh
+   git clone https://github.com/kave-me/asalkhadem-com.git
+   ```
+
+### Install NPM packages
+```sh
+npm install
+```
+### Start the development server
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Fork the Project
+- Create your Feature Branch (git checkout -b feature/AmazingFeature)
+- Commit your Changes (git commit -m 'Add some AmazingFeature')
+- Push to the Branch (git push origin feature/AmazingFeature)
+- Open a Pull Request
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## License
+Distributed under the MIT License. See LICENSE for more information.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contact
+Developer: kave(dot)mdi(at)gmail(dot)com
+Project Link: https://github.com/kave-me/asalkhadem-com
+Production Website: https://asalkhadem.com
